@@ -1,0 +1,74 @@
+body{
+    font-family: "Open Sans Condensed", Tahoma, Verdana, sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+}
+
+.nav-container{
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+
+}
+
+.nav-link{
+    flex: 1;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
+.nav-link:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+#projects-nav-container{
+    background-color: #6D74DB;
+    color: white;
+}
+
+#github-nav-container{
+    background-color: #FFFFFF;
+}
+
+#about-nav-container{
+    background-color: #FFFFFF;
+
+}
+
+#welcome-section{
+    height: 100vh;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+
+
+}
+
+.welcome-text{
+    color:white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#welcome-background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
