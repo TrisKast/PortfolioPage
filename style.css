@@ -138,6 +138,7 @@ body{
 .project-link{
     position: relative;
     text-decoration: none;
+    color:inherit; 
 }
 
 .project-link:hover{
@@ -152,7 +153,7 @@ body{
 
 
 #projects{
-    height: 150vh;  
+    /* height: 100vh;   */
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -241,44 +242,88 @@ body{
     }
   }
 
-.about-section{
-    height: 100vh;
-    border: 1px solid;
-    border-radius: 15px;
-    padding:3%;
-    margin: 1%;
+
+
+.navigation-arrow{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test{
+    flex:1
+}
+
+.section-middle{
+    flex:18;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-content{
+    flex:18;
     display: flex;
     flex-direction: column;
 }
 
+.about-section{
+    /* height: 100vh; */
+    border: 1px solid;
+    border-radius: 15px;
+    padding:3%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .about-heading{
-    flex:1
+    flex:1;
+    padding: 0%;
+    margin: 0%;
 }
 
 .about-me-content{
-    flex:18;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#prof-me-text-wrapper{
-    flex: 3;
-    height: 100%;
+    flex:14;
     font-weight: 150;
     font-size: 18px;
+}
+
+.about-section-private{
+    height: 100vh;
+    /* border: 1px solid;
+    border-radius: 15px; */
+    padding:3%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 
 }
 
-#prof-me-skill-wheel-wrapper{
-    flex: 4;
+.about-private-heading{
+    flex:1;
+    text-align: center;
 }
+
+.about-me-private-content{
+    flex:18;
+    font-weight: 150;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
 
 .private-info-wrapper{
     flex: 1;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -291,7 +336,7 @@ body{
     border: 1px solid;
     margin: 2%;
     padding: 1%;
-    height: 50%;
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -306,7 +351,6 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .info-box-content-tile{
@@ -318,6 +362,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.infobox-unit{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.spacer-infobox{
+    flex:5;
 }
 
 
@@ -369,3 +424,37 @@ body{
 #show4{
     background-image: url("show4.jpeg");
 }
+
+#song1{
+    background-image: url("song1.jpg");
+}
+
+#song2{
+    background-image: url("song2.jpg");
+}
+
+#song3{
+    background-image: url("song3.jpg");
+}
+
+#song4{
+    background-image: url("song4.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+    .project-row{
+        flex-direction:column;
+    }
+
+    .about-me-private-content{
+        flex-direction: column;
+    }
+
+    .infobox-content{
+        flex:20;
+        height: 100px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  }
