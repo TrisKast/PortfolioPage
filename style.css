@@ -273,7 +273,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-
 }
 
 .about-section-private{
@@ -295,9 +294,11 @@ body{
 
 .about-heading{
     flex:1;
-    padding: 0%;
-    margin: 0%;
+    padding: 1%;
+    margin: 1%;
     text-align: center;
+    justify-content: stretch;
+    /* background-color: chartreuse; */
 }
 
 .about-body{
@@ -305,11 +306,17 @@ body{
     margin: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     flex: 14;
-    /* border: 1px solid;
-    border-radius: 15px; */
+
+    /* background-color: blue; */
+}
+
+#resume{
+
+
+
 }
 
 #about-me-text{
@@ -319,17 +326,21 @@ body{
 }
 
 .about-me-content{
+    /* background-color: coral; */
+    height: 90%;
     flex:14;
     font-weight: 150;
     font-size: 18px;
+    padding:2%;
+
 }
 
 #about-resume{
     display: flex;
     flex-direction: row;
-    /* justify-items: stretch; */
-    /* align-items: stretch; */
-    height: 80%;
+    justify-content: center;
+    align-items: stretch;
+    /* height: 80%; */
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 5%;
@@ -340,6 +351,7 @@ body{
     flex:1;
     display: flex;
     flex-direction: column;
+    /* background-color: red; */
 }
 
 .time-line-station{
@@ -361,10 +373,11 @@ body{
 
 
 #time-line-explanation{
-    flex:10;
+    /* background-color: beige; */
+    flex:2;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
     padding: 5%;
 }

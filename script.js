@@ -5,14 +5,15 @@ const navbar = document.querySelector('#navbar')
 
 const slideButtonLeft = document.querySelector('#slide-button-left');
 const slideButtonRight = document.querySelector('#slide-button-right');
-
 const welcomeText = document.querySelector('#welcome-text')
 const resume = document.querySelector('#resume')
-resume.style.display='none' 
 const skillwheel = document.querySelector('#skillwheel')
-skillwheel.style.display='none' 
 const personal = document.querySelector('#personal')
+
+resume.style.display='none' 
+skillwheel.style.display='none' 
 personal.style.display='none' 
+
 let currPersonalPos = 'text'
 
 slideButtonLeft.addEventListener('click', slide_left)
@@ -77,11 +78,13 @@ function checkOffSet(e){
 
 const resume_stations = Array.from(document.querySelectorAll('.time-line-station'))
 
+
 resume_stations.forEach(station => station.addEventListener('click', activte_resume_station))
-resume_stations.forEach(station => station.addEventListener('mouseenter', setHiglight))
-resume_stations.forEach(station => station.addEventListener('mouseleave', revertHighlight))
+resume_stations.forEach(station => station.addEventListener('mouseenter', setHiglight, false))
+resume_stations.forEach(station => station.addEventListener('mouseleave', revertHighlight, false))
 
 function setHiglight(e){
+    
     e.target.style.backgroundColor = 'mediumaquamarine'
     e.target.childNodes[1].style.color = 'red'
 }
@@ -97,28 +100,12 @@ const stationTechnologies = document.querySelector('#station-technologies')
 const stationDescription = document.querySelector('#station-description')
 
 function activte_resume_station(e){
-    
+
     resume_stations.forEach(station => station.style.backgroundColor = 'white')
-
-    if(e.target.nodeName  == 'P'){
-        currTargetId = e.target.parentNode.id
-    } else if(e.target.nodeName  == 'DIV'){
-        currTargetId = e.target.id
-    }
-    console.log(currTargetId)
-
-    const currTarget = document.querySelector(`#${currTargetId}`)
-
-
-    currTarget.style.backgroundColor = 'mediumaquamarine'
-
     
-    
-    
+    if(e.target.id == 'station-BSc-wrapper' || e.target.id == 'station-BSc'){
+        document.querySelector('#station-BSc-wrapper').style.backgroundColor = 'mediumaquamarine'
 
-
-    
-    if(currTarget.id == 'station-B.Sc.-wrapper'){
         stationName.innerHTML = 'Bachelor of Science, Bioinformatics'
         stationDuration.innerHTML = 'Tübingen, 04/2012 - 10/2016'
         stationDescription.innerHTML = `                            <p>I did this and that:</p>
@@ -137,22 +124,34 @@ function activte_resume_station(e){
             </li>
         </ul>`
         stationTechnologies.innerHTML = 'Docker | Bash | Linux'
-    }else if(currTarget.id == 'station-M.Sc.-wrapper'){
+
+    }else if(e.target.id == 'station-MSc-wrapper' || e.target.id == 'station-MSc'){
+        document.querySelector('#station-MSc-wrapper').style.backgroundColor = 'mediumaquamarine'
+
         stationName.innerHTML = 'Master of Science, Bioinformatics'
         stationDuration.innerHTML = 'Tübingen, 10/2016 - 01/2019'
         stationDescription.innerHTML = 'I did this and that'
         stationTechnologies.innerHTML = 'Docker | Bash | Linux'
-    } else if(currTarget.id == 'station-working-student-wrapper'){
+
+    } else if(e.target.id == 'station-working-student-wrapper' || e.target.id == 'station-working-student'){
+        document.querySelector('#station-working-student-wrapper').style.backgroundColor = 'mediumaquamarine'
+
+        stationName.innerHTML = 'Eberhard-Karls Universtiy'
+        stationDuration.innerHTML = 'Tübingen, 02/2019 - 08/2020'
+        stationDescription.innerHTML = 'I did this and that'
+        stationTechnologies.innerHTML = 'Docker | Bash | Linux'
+
+    } else if(e.target.id == 'station-DZNE-wrapper' || e.target.id == 'station-DZNE'){
+        document.querySelector('#station-DZNE-wrapper').style.backgroundColor = 'mediumaquamarine'
+
         stationName.innerHTML = 'German Center for Neurodegenerative Diseases'
         stationDuration.innerHTML = 'Tübingen, 02/2019 - 08/2020'
         stationDescription.innerHTML = 'I did this and that'
         stationTechnologies.innerHTML = 'Docker | Bash | Linux'
-    } else if(currTarget.id == 'station-DZNE-wrapper'){
-        stationName.innerHTML = 'German Center for Neurodegenerative Diseases'
-        stationDuration.innerHTML = 'Tübingen, 02/2019 - 08/2020'
-        stationDescription.innerHTML = 'I did this and that'
-        stationTechnologies.innerHTML = 'Docker | Bash | Linux'
-    }else if(currTarget.id == 'station-MPUSP-wrapper'){
+
+    }else if(e.target.id == 'station-MPUSP-wrapper' || e.target.id == 'station-MPUSP'){
+        document.querySelector('#station-MPUSP-wrapper').style.backgroundColor = 'mediumaquamarine'
+
         stationName.innerHTML = 'Max Planck Unit for the Science of Pathogenes'
         stationDuration.innerHTML = 'Berlin, 02/2020 - current'
         stationDescription.innerHTML = 'I did this and that'
