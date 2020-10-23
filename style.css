@@ -266,7 +266,7 @@ body{
 }
 
 .about-section{
-    height: 90vh;
+    min-height: 90vh;
     padding:2%;
     margin: 2%;
     display: flex;
@@ -291,16 +291,6 @@ body{
     flex-direction: row;
 }
 
-
-.about-heading{
-    flex:1;
-    padding: 1%;
-    margin: 1%;
-    text-align: center;
-    justify-content: stretch;
-    /* background-color: chartreuse; */
-}
-
 .about-body{
     padding:2%;
     margin: 2%;
@@ -310,11 +300,42 @@ body{
     align-items: stretch;
     flex: 14;
 
-    /* background-color: blue; */
+
 }
 
-#resume{
+.about-heading{
+    flex:1;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    justify-content: stretch;
+}
 
+.about-me-content{
+    min-height: 80%;
+    flex:14;
+    font-weight: 150;
+    font-size: 18px;
+    padding:2%;
+
+}
+
+#skills-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+#myChart {
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+  }
+
+
+#resume{
+    min-width: 90vh;
 
 
 }
@@ -325,33 +346,24 @@ body{
     padding:4%;
 }
 
-.about-me-content{
-    /* background-color: coral; */
-    height: 90%;
-    flex:14;
-    font-weight: 150;
-    font-size: 18px;
-    padding:2%;
 
-}
 
 #about-resume{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    /* height: 80%; */
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    justify-content: flex-start;
+    align-items: stretch ;
+    min-height: 70vh;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 #time-line{
     flex:1;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
 }
 
 .time-line-station{
@@ -373,11 +385,10 @@ body{
 
 
 #time-line-explanation{
-    /* background-color: beige; */
     flex:2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     padding: 5%;
 }
@@ -386,6 +397,16 @@ body{
     font-size: normal;
     color: grey;
 
+}
+
+.selected-station{
+    background-color: mediumaquamarine;
+    border-color: hsl(159, 83%, 27%);
+}
+
+.station-hovered{
+    background-color: mediumaquamarine;
+    border-color: hsl(159, 83%, 27%);
 }
 
 
@@ -606,7 +627,7 @@ footer{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     .project-row{
         flex-direction:column;
     }
@@ -632,6 +653,11 @@ footer{
         height: auto;    
     }
 
+    .about-me-content{
+        height: auto;
+    
+    }
+
 
     .about-section-private{
         flex-direction: column;
@@ -645,6 +671,26 @@ footer{
     .welcome-text{
         font-weight: 450;
         font-size: 20px;
+    }
+
+    #about-resume{
+        flex-direction: column;
+        justify-content: center;
+        min-height: 90vh;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    .time-line-station{
+        flex:1;
+        display: flex;
+        align-items: center;
+        border-left: 5px solid grey;
+        border-right: 5px solid grey;
+        padding-right: 3%;
+        padding-left: 3%;
     }
 
   }
