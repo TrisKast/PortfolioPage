@@ -303,6 +303,16 @@ body{
 
 }
 
+#skill-section{
+    min-height: 90vh;
+    padding:2%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .about-heading{
     flex:1;
     padding: 1%;
@@ -312,7 +322,7 @@ body{
 }
 
 .about-me-content{
-    min-height: 80%;
+    /* min-height: 80%; */
     flex:14;
     font-weight: 150;
     font-size: 18px;
@@ -327,17 +337,18 @@ body{
     justify-content: space-evenly;
 }
 
-#myChart {
+
+.zingCharts {
     height: 100%;
     width: 100%;
-    min-height: 150px;
-  }
+    min-height: 550px;   
+    align-items: center;
+}
+
 
 
 #resume{
     min-width: 90vh;
-
-
 }
 
 #about-me-text{
@@ -409,6 +420,22 @@ body{
     border-color: hsl(159, 83%, 27%);
 }
 
+#chart-button-wrapper{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.active-skill-button{
+    
+}
+
+.chart-button{
+    flex:1;
+}
 
 
 

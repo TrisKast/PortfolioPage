@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" class="zc-html">
 <head>
     <meta charset="utf-8">
 
@@ -9,8 +9,10 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 </head>
 
 <body>
@@ -135,12 +137,6 @@
                     </div>
                 </div>
             </div>
-            <div class="about-body" id="skills"> 
-                <h1 class="about-heading">SKILLS</h1>
-                <div class="about-me-content" id="skills-content">
-                    <div id='myChart'></div>
-                </div>
-            </div>
             <div class="about-body" id="personal"> 
                 <h1 class="about-heading">GET TO KNOW ME</h1>
                 <div class="about-me-content">
@@ -223,6 +219,19 @@
                     <i class="fas fa-3x fa-caret-right"></i>
                 </a>
              </div>
+        </section>
+
+        <section class="about-section" id="skill-section">
+            <h1 class="about-heading">SKILLS</h1>
+            <div id="chart-button-wrapper">
+                <button class="button is-primary is-outlined chart-button" id="chart-button-1" >WebDevelopment</button>
+                <button class="button is-warning is-outlined chart-button" id="chart-button-2">Data Analysis</button>
+                <button class="button is-danger is-outlined chart-button" id="chart-button-3">General</button>
+                <button class="button is-info is-outlined chart-button" id="chart-button-4">Language Usage</button>
+            </div>
+            <div class="about-me-content" id="skills-content">
+                <div class="zingCharts" id='skillChart'></div>
+            </div>
         </section>
 
 
@@ -576,8 +585,6 @@
     <footer>
         ©2020 - Tristan Kast - tristan.kast@gmail.com
     </footer>
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-
 
     <script src="script.js"></script>
 </body>
