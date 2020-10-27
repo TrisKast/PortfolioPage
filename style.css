@@ -17,7 +17,7 @@ body{
     width: 100%;
     transition: 0.5s;
     z-index: 3;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 .nav-container{
@@ -230,6 +230,10 @@ body{
     background-image: url("technical-documentation-stock.png");
 }
 
+#chart-button-wrapper{
+    margin: 5%;
+}
+
 @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -339,10 +343,15 @@ body{
 
 
 .zingCharts {
+    flex:1;
     height: 100%;
     width: 100%;
     min-height: 550px;   
     align-items: center;
+}
+
+.skill-explanation{
+    flex:1;
 }
 
 
@@ -430,7 +439,7 @@ body{
 
 
 .active-skill-button{
-    
+
 }
 
 .chart-button{
@@ -720,4 +729,14 @@ footer{
         padding-left: 3%;
     }
 
+
+
+
+
+  }
+
+  @media only screen and (max-width: 1300px) {
+    #skills-content{
+        flex-direction: column;
+    }
   }

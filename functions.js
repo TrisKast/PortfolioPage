@@ -1,46 +1,4 @@
-import {
-  usageChartConfig,
-  webDevChartConfig,
-  dataAnalysisChartConfig,
-  generalChartConfig,
-  skillCloudConfig,
-  skillDescriptionDict
-} from './zingcharts.js'
-
-const navbar = document.querySelector('#navbar')
-const slideButtonLeft = document.querySelector('#slide-button-left');
-const slideButtonRight = document.querySelector('#slide-button-right');
-const welcomeText = document.querySelector('#welcome-text')
-const resume = document.querySelector('#resume')
-const skills = document.querySelector('#skills')
-const personal = document.querySelector('#personal')
-const chartButtons = Array.from(document.querySelectorAll('.chart-button'));
-const resume_stations = Array.from(document.querySelectorAll('.time-line-station'))
-const stationName = document.querySelector('#station-name')
-const stationDuration = document.querySelector('#station-duration')
-const stationTechnologies = document.querySelector('#station-technologies')
-const stationDescription = document.querySelector('#station-description')
-const skillExplanation = document.querySelector('#skill-explanation')
-const skillName = document.querySelector('#skill-name')
-const skillDescription = document.querySelector('#skill-description')
-
-resume.style.display='none' 
-personal.style.display='none' 
-skillExplanation.style.display='none'
-let currPersonalPos = 'text'
-let displaySkillExplanation = false
-
-window.addEventListener("scroll", checkOffSet);
-chartButtons.forEach(button => button.addEventListener('click', changeChart));
-slideButtonLeft.addEventListener('click', slide_left)
-slideButtonRight.addEventListener('click', slide_right)
-resume_stations.forEach(station => station.addEventListener('click', activte_resume_station, false))
-resume_stations.forEach(station => station.addEventListener('mouseenter', setHiglight, false))
-resume_stations.forEach(station => station.addEventListener('mouseleave', revertHighlight, false))
-
-
-
-function changeChart(e){
+export function changeChart(e){
     chartButtons.forEach(button => button.classList.add('is-outlined'))
     document.querySelector('#'+e.target.id).classList.remove('is-outlined')
 
@@ -89,8 +47,7 @@ function changeChart(e){
       });
 }
 
-
-function slide_right(){
+export function slide_right(){
 
   if(currPersonalPos == 'text'){
       welcomeText.style.display='none' 
@@ -107,7 +64,7 @@ function slide_right(){
   } 
 }
 
-function slide_left(){
+export function slide_left(){
 
     if(currPersonalPos == 'text'){
         welcomeText.style.display='none' 
@@ -124,7 +81,7 @@ function slide_left(){
     }
 }
 
-function checkOffSet(e){
+export function checkOffSet(e){
     if(window.pageYOffset > 0){
         navbar.style.backgroundColor = "white";
         navbar.style.padding = "0.5%";
@@ -137,17 +94,17 @@ function checkOffSet(e){
     }
 }
 
-function setHiglight(e){
+export function setHiglight(e){
     e.target.classList.add('station-hovered')
     e.target.childNodes[1].style.color = 'hsl(159, 83%, 27%)'
 }
 
-function revertHighlight(e){
+export function revertHighlight(e){
     e.target.classList.remove('station-hovered')
     e.target.childNodes[1].style.color = 'black'
 }
 
-function activte_resume_station(e){
+export function activte_resume_station(e){
 
     resume_stations.forEach(station => station.classList.remove('selected-station'))
 
@@ -208,11 +165,3 @@ function activte_resume_station(e){
     }
     
 }
-   
-  zingchart.render({
-    id: 'skillChart',
-    data: skillCloudConfig,
-    width: '100%',
-    height: '100%',
-  });
-
