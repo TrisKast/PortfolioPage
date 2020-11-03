@@ -4,7 +4,7 @@ html{
 
 body{
     font-family: "Open Sans Condensed", Tahoma, Verdana, sans-serif;
-    margin: 0%;
+    // margin: 0%;
 }
 
 #navbar{
@@ -17,12 +17,12 @@ body{
     width: 100%;
     transition: 0.5s;
     z-index: 3;
-    padding: 0.5%;
+    // padding: 0.5%;
 }
 
 .nav-container{
     text-align: center;
-    padding: 10px 25px 10px 25px;
+    // padding: 10px 25px 10px 25px;
     border-radius: 15px;
 }
 
@@ -58,8 +58,8 @@ body{
 
 
 #project-heading{
-    margin-top: 5%;
-    margin-bottom: 3%;
+    // margin-top: 5%;
+    // margin-bottom: 3%;
 }
 
 .project-row{
@@ -70,7 +70,7 @@ body{
 
 .project-tile{
     flex:1;
-    margin: 1%;
+    // margin: 1%;
     border-radius: 15px;
     /* background-color: lightsalmon; */
     display: flex;
@@ -86,8 +86,8 @@ body{
     z-index: 2;
     border-radius: 15px;
     background-color: white;
-    margin:1%;
-    padding: 1%;
+    // margin:1%;
+    // padding: 1%;
     width: 25%;
     text-align: center;
     border: 1px solid;
@@ -98,8 +98,8 @@ body{
     z-index: 2;
     border-radius: 15px;
     background-color: white;
-    margin: 0 auto;
-    padding: 2%;
+    // margin: 0 auto;
+    // padding: 2%;
     width: 80%;
     text-align: center;
     border: 1px solid;
@@ -119,16 +119,16 @@ body{
     z-index: 2;
     border-radius: 15px;
     background-color: white;
-    margin:2%;
-    padding: 2%;
+    // margin:2%;
+    // padding: 2%;
     text-align: center;
     width: 30%;
     border: 1px solid;
 }
 
 .project-link-para{
-    margin: 0%;
-    padding: 0%;
+    // margin: 0%;
+    // padding: 0%;
 }
 
 
@@ -207,31 +207,31 @@ body{
 }
 
 #berl-eat-tile-background{
-    background-image: url("berl-eat-background.png");
+    background-image: url("/static/images/berl-eat-background.png");
 }
 
 #tabata-warriors-tile-background{
-    background-image: url("tabata-warriors-example-stock.png");
+    background-image: url("/static/images/tabata-warriors-example-stock.png");
 }
 
 #personal-blog-tile-background{
-    background-image: url("personal-blog-stock.png");
+    background-image: url("/static/images/personal-blog-stock.png");
 }
 
 #github-tile-background{
-    background-image: url("github-stock.png");
+    background-image: url("/static/images/github-stock.png");
 }
 
 #mealtimes-tile-background{
-    background-image: url("mealtimes-stock.png");
+    background-image: url("/static/images/mealtimes-stock.png");
 }
 
 #tech-docu-tile-background{
-    background-image: url("technical-documentation-stock.png");
+    background-image: url("/static/images/technical-documentation-stock.png");
 }
 
 #chart-button-wrapper{
-    margin: 5%;
+    // margin: 5%;
 }
 
 @keyframes rotation {
@@ -269,10 +269,11 @@ body{
     flex-direction: column;
 }
 
-.about-section{
+
+.classic-section{
     min-height: 90vh;
-    padding:2%;
-    margin: 2%;
+    // padding:2%;
+    // margin: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -296,8 +297,8 @@ body{
 }
 
 .about-body{
-    padding:2%;
-    margin: 2%;
+    // padding:2%;
+    // margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -309,8 +310,8 @@ body{
 
 #skill-section{
     min-height: 90vh;
-    padding:2%;
-    margin: 2%;
+    // padding:2%;
+    // margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,8 +320,8 @@ body{
 
 .about-heading{
     flex:1;
-    padding: 1%;
-    margin: 1%;
+    // padding: 1%;
+    // margin: 1%;
     text-align: center;
     justify-content: stretch;
 }
@@ -330,7 +331,7 @@ body{
     flex:14;
     font-weight: 150;
     font-size: 18px;
-    padding:2%;
+    // padding:2%;
 
 }
 
@@ -363,7 +364,7 @@ body{
 #about-me-text{
     border: 1px solid;
     border-radius: 15px;
-    padding:4%;
+    // padding:4%;
 }
 
 
@@ -374,10 +375,10 @@ body{
     justify-content: flex-start;
     align-items: stretch ;
     min-height: 70vh;
-    margin-right: 7%;
-    margin-left: 7%;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    // margin-right: 7%;
+    // margin-left: 7%;
+    // margin-bottom: 3%;
+    // margin-top: 3%;
 }
 
 #time-line{
@@ -391,8 +392,8 @@ body{
     display: flex;
     align-items: center;
     border-left: 5px solid grey;
-    padding-right: 5%;
-    padding-left: 5%;
+    // padding-right: 5%;
+    // padding-left: 5%;
 }
 
 /* .time-line-station:hover{
@@ -410,7 +411,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    padding: 5%;
+    // padding: 5%;
 }
 
 #station-duration{
@@ -437,10 +438,6 @@ body{
     align-items: stretch;
 }
 
-
-.active-skill-button{
-
-}
 
 .chart-button{
     flex:1;
@@ -474,8 +471,8 @@ text-align: center;
     text-align: center;
     border-radius: 15px;
     border: 1px solid;
-    margin: 2%;
-    padding: 1%;
+    // margin: 2%;
+    // padding: 1%;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -495,7 +492,7 @@ text-align: center;
 
 .info-box-content-tile{
     flex:1;
-    margin: 1%;
+    // margin: 1%;
     border-radius: 15px;
     border: 1px solid; 
 
@@ -518,77 +515,77 @@ text-align: center;
 
 
 #book1{
-    background-image: url("book1.jpg");
+    background-image: url("/static/images/book1.jpg");
 }
 
 #book2{
-    background-image: url("book2.jpeg");
+    background-image: url("/static/images/book2.jpeg");
 }
 
 #book3{
-    background-image: url("book3.jpg");
+    background-image: url("/static/images/book3.jpg");
 }
 
 #book4{
-    background-image: url("book4.jpg");
+    background-image: url("/static/images/book4.jpg");
 }
 
 #podcast1{
-    background-image: url("podcast1.jpg");
+    background-image: url("/static/images/podcast1.jpg");
 }
 
 #podcast2{
-    background-image: url("podcast2.jpeg");
+    background-image: url("/static/images/podcast2.jpeg");
 }
 
 #podcast3{
-    background-image: url("podcast3.png");
+    background-image: url("/static/images/podcast3.png");
 }
 
 #podcast4{
-    background-image: url("podcast4.png");
+    background-image: url("/static/images/podcast4.png");
 }
 
 #show1{
-    background-image: url("show1.jpg");
+    background-image: url("/static/images/show1.jpg");
 }
 
 #show2{
-    background-image: url("show2.jpg");
+    background-image: url("/static/images/show2.jpg");
 }
 
 #show3{
-    background-image: url("show3.jpg");
+    background-image: url("/static/images/show3.jpg");
 }
 
 #show4{
-    background-image: url("show4.jpeg");
+    background-image: url("/static/images/show4.jpeg");
 }
 
 #song1{
-    background-image: url("song1.jpg");
+    background-image: url("/static/images/song1.jpg");
 }
 
 #song2{
-    background-image: url("song2.jpg");
+    background-image: url("/static/images/song2.jpg");
 }
 
 #song3{
-    background-image: url("song3.jpg");
+    background-image: url("/static/images/song3.jpg");
 }
 
 #song4{
-    background-image: url("song4.jpg");
+    background-image: url("/static/images/song4.jpg");
 }
 
 #contact-section{
     border: 1px solid;
     border-radius: 15px;
-    padding:3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    // padding:3%;
+    // margin-top: 3%;
+    // margin-bottom: 3%;
+    // margin-left: 10%;
+    // margin-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -602,8 +599,8 @@ text-align: center;
 #contact-heading{
     font-size: 36px;
     flex:1;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    // padding-bottom: 0;
+    // margin-bottom: 0;
 }
 
 #contact-text{
@@ -622,11 +619,11 @@ text-align: center;
 
 .contact-link{
     flex:1;
-    padding:10%;
+    // padding:10%;
     border: 1px solid;
     border-radius: 15px;
     min-width: fit-content;
-    margin:5%;
+    // margin:5%;
     color:white;
     text-decoration: none;
 }
@@ -657,7 +654,7 @@ text-align: center;
 footer{
     background-color: #0D0F34;
     color:white;
-    padding: 3%;
+    // padding: 3%;
     text-align: center;
 }
 
@@ -681,11 +678,11 @@ footer{
     }
 
     #contact-section{
-        margin-left: 3%;
-        margin-right: 3%;
+        // margin-left: 3%;
+        // margin-right: 3%;
     }
 
-    .about-section{
+    .classic-section{
         height: auto;    
     }
 
@@ -713,10 +710,10 @@ footer{
         flex-direction: column;
         justify-content: center;
         min-height: 90vh;
-        margin-right: 2%;
-        margin-left: 2%;
-        margin-bottom: 3%;
-        margin-top: 3%;
+        // margin-right: 2%;
+        // margin-left: 2%;
+        // margin-bottom: 3%;
+        // margin-top: 3%;
     }
 
     .time-line-station{
@@ -725,8 +722,8 @@ footer{
         align-items: center;
         border-left: 5px solid grey;
         border-right: 5px solid grey;
-        padding-right: 3%;
-        padding-left: 3%;
+        // padding-right: 3%;
+        // padding-left: 3%;
     }
 
 

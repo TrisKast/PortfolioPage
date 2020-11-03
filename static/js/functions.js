@@ -61,6 +61,8 @@ export function slide_right(){
       personal.style.display='none' 
       welcomeText.style.display='block' 
       currPersonalPos = 'text'
+      welcomeText.backgroundColor = "red";
+
   } 
 }
 
@@ -84,12 +86,12 @@ export function slide_left(){
 export function checkOffSet(e){
     if(window.pageYOffset > 0){
         navbar.style.backgroundColor = "white";
-        navbar.style.padding = "0.5%";
+        navbar.style.// padding = "0.5%";
         navbar.style.borderBottom = "thin solid black";
     }
     else{
         navbar.style.backgroundColor = "transparent";
-        navbar.style.padding = "0.5%";
+        navbar.style.// padding = "0.5%";
         navbar.style.borderBottom = "none";
     }
 }

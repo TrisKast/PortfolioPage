@@ -2,7 +2,7 @@ export const usageChartConfig = {
     "type": "line",
     "utc": true,
     "plotarea": {
-      "margin": "dynamic 45 60 dynamic",
+      "// margin": "dynamic 45 60 dynamic",
     },
     "legend": {
       "layout": "float",
@@ -13,8 +13,8 @@ export const usageChartConfig = {
       "adjust-layout": true,
       "toggle-action": "remove",
       "item": {
-        "padding": 7,
-        "marginRight": 17,
+        "// padding": 7,
+        "// marginRight": 17,
         "cursor": "hand"
       }
     },
@@ -57,7 +57,7 @@ export const usageChartConfig = {
         "border-radius": "5px",
         "border-width": "1px",
         "border-color": "#f6f7f8",
-        "padding": "10px",
+        "// padding": "10px",
         "font-weight": "bold"
       },
       "scale-label": {
@@ -325,7 +325,7 @@ export const webDevChartConfig = {
     plot: {
         tooltip: {
           align: 'left',
-          padding: '10px 15px',
+          // padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -339,7 +339,7 @@ export const webDevChartConfig = {
       },
             
     plotarea: {
-        margin: '5px'
+        // margin: '5px'
     },
     options: {
         space: 0,
@@ -358,25 +358,56 @@ export const dataAnalysisChartData = [{
     text: 'data-analysis',
     parent: ''
   }, {
-    id: 'front-end',
-    text: 'front-end',
-    parent: 'data-analysis'
+    id: 'python',
+    text: 'Python',
+    parent: 'data-analysis',
+    value: 1
   },{
-    id: 'back-end',
-    text: 'back-end',
+    id: 'r',
+    text: 'R',
+    parent: 'data-analysis',
+    value: 1
+  },  {
+    id: 'octave',
+    text: 'Octave',
+    parent: 'data-analysis',
+    value: 1
+  },  {
+    id: 'wms',
+    text: 'WMS',
     parent: 'data-analysis'
   },  {
-    id: 'frameworks',
-    text: 'frameworks',
+    id: 'snakemake',
+    text: 'Snakemake',
+    parent: 'wms',
+    value: 1
+  },  {
+    id: 'nextflow',
+    text: 'Nextflow',
+    parent: 'wms',
+    value: 1
+  },  {
+    id: 'tools',
+    text: 'Tools',
     parent: 'data-analysis'
-  }];
+  },  {
+    id: 'tableau',
+    text: 'Tableau',
+    parent: 'tools',
+    value: 1
+  }, {
+    id: 'knime',
+    text: 'Knime',
+    parent: 'tools',
+    value: 1
+  } ];
 
 export const dataAnalysisChartConfig = {
     type: 'sunburst',
     plot: {
         tooltip: {
           align: 'left',
-          padding: '10px 15px',
+          // padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -390,7 +421,7 @@ export const dataAnalysisChartConfig = {
       },
             
     plotarea: {
-        margin: '5px'
+        // margin: '5px'
     },
     options: {
         space: 0,
@@ -409,17 +440,71 @@ export const generalChartData = [{
     text: 'data-analysis',
     parent: ''
   }, {
-    id: 'front-end',
-    text: 'front-end',
+    id: 'latex',
+    text: 'Latex',
     parent: 'data-analysis'
+  }, {
+    id: 'git',
+    text: 'Git',
+    parent: 'data-analysis'
+  }, {
+    id: 'gitlab',
+    text: 'GitLab',
+    parent: 'git',
+    value: 1
+  }, {
+    id: 'github',
+    text: 'GitHub',
+    parent: 'git',
+    value: 1
   },{
-    id: 'back-end',
-    text: 'back-end',
+    id: 'bash',
+    text: 'Bash',
+    parent: 'data-analysis',
+    value: 1
+  },  {
+    id: 'os',
+    text: 'os',
     parent: 'data-analysis'
   },  {
-    id: 'frameworks',
-    text: 'frameworks',
-    parent: 'data-analysis'
+    id: 'linux',
+    text: 'Linux',
+    parent: 'os'
+  },  {
+    id: 'ubuntu',
+    text: 'Ubuntu',
+    parent: 'linux',
+    value: 1
+  }, {
+    id: 'centos',
+    text: 'CentOs',
+    parent: 'linux',
+    value: 1
+  }, {
+    id: 'scientificlinux',
+    text: 'ScientificLinux',
+    parent: 'linux',
+    value: 1
+  },  {
+    id: 'macos',
+    text: 'MacOs',
+    parent: 'os',
+    value: 1
+  },{
+    id: 'windows',
+    text: 'Windows',
+    parent: 'os',
+    value: 1
+  }, {
+    id: 'office',
+    text: 'Office',
+    parent: 'windows',
+    value: 1
+  },  {
+    id: 'docker',
+    text: 'Docker',
+    parent: 'data-analysis',
+    value: 1
   }];
 
 export const generalChartConfig = {
@@ -427,7 +512,7 @@ export const generalChartConfig = {
     plot: {
         tooltip: {
           align: 'left',
-          padding: '10px 15px',
+          // padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -441,7 +526,7 @@ export const generalChartConfig = {
       },
             
     plotarea: {
-        margin: '5px'
+        // margin: '5px'
     },
     options: {
         space: 0,

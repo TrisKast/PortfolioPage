@@ -8,7 +8,7 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -28,37 +28,34 @@
             </a>
         </div>
         <div class="nav-container" id="about-nav-container">
-            <a class="nav-link" id="about-nav-links" href="#about-me-professional">
+            <a class="nav-link" id="about-nav-links" href="#about-section">
                 READ ABOUT ME
             </a>
         </div>
     </nav>
+
     <div class="content">
         <section id="welcome-section">
-            <img id="welcome-background" src="black-burst-background.png">
-           
+            <img id="welcome-background" src="/static/images/black-burst-background.png">
             <div id="welcome-spacer"></div>
-            <img id="head-cutout" src="head_cutout3.png">
+            <img id="head-cutout" src="/static/images/head_cutout3.png">
             <div id="welcome-para-wrapper">
-                <h1 id="welcome-para-1" class="welcome-text">
+                <h1>
                     Hi, I'm Tristan
-                    I'm a web developer from Germany. <br>
+                    I'm a bioinformatician and web developer from Germany. <br>
                     I love learning how the Web works and build exiting websites for it.
                 </h1>
-                <!-- <p id="welcome-para-2" class="welcome-text">
-                    I love learning how the Web works and build exiting websites for it.
-                </p> -->
             </div>
         </section>
 
-        <section class="about-section" id="about-me-professional">
+        <section class="classic-section" id="about-section">
             <div class="slide-button-container">
-                <a class="slide-button" id="slide-button-left">
+                <a id="slide-button-left">
                     <i class="fas fa-3x fa-caret-left"></i>
                 </a>
             </div>
             <div class="about-body" id="welcome-text"> 
-                <h1 class="about-heading">ABOUT ME</h1>
+                <h1>ABOUT ME</h1>
                 <div class="about-me-content" id="about-me-text">
 
                     <p class="prof-me-text">
@@ -90,28 +87,31 @@
                 </div>
             </div>
             <div class="about-body" id="resume"> 
-                <h1 class="about-heading">RESUME</h1>
+                <h1>RESUME</h1>
                 <div class="about-me-content" id="about-resume">
                     <div id="time-line">
                         <div class="time-line-station selected-station" id="station-BSc-wrapper">
                             <p class="time-line-title" id="station-BSc">B.Sc., Bioinformatics</p>
                         </div>
                         <div class="time-line-station" id="station-MSc-wrapper">
-                            <p class="time-line-title" id="station-MSc">M.Sc., Bioinformatics</p>
+                            <p id="station-MSc">M.Sc., Bioinformatics</p>
                         </div>
                         <div class="time-line-station" id="station-working-student-wrapper">
-                            <p class="time-line-title" id="station-working-student">Working Student</p>
+                            <p id="station-working-student">Working Student</p>
                         </div>
                         <div class="time-line-station" id="station-DZNE-wrapper">
-                            <p class="time-line-title" id="station-DZNE">DZNE</p>
+                            <p id="station-DZNE">Computational Scientist</p>
                         </div>
                         <div class="time-line-station" id="station-MPUSP-wrapper">
-                            <p class="time-line-title" id="station-MPUSP">MPUSP<p>
+                            <p id="station-MPUSP">Software Engineer<p>
                         </div>
+                    </div>
+                    <div id="time-line-spacer">
                     </div>
                     <div id="time-line-explanation">
                         <h2 id="station-name">Bachelor of Science, Bioinformatics</h2>
                         <p id="station-duration">Tübingen, Eberhard Karls University, 04/2012 - 03/2016</p>
+                        <hr id="time-line-seperator">
                         <div id="station-description">
                             <p>I did this and that.</p>
                             <ul>
@@ -132,13 +132,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h4 id="station-tech-heading">Used Technologies:</h4>
-                        <code id="station-technologies">Docker | Bash | Linux</code>
+                        <h4 id="station-tech-heading">Relevant Courses:</h4>
+                        <code id="station-technologies">Computerscience | Mathematics | Technical CS | Theoretical CS | Datacompression |
+                            Stochastics | Algorithms | Software Development | Internet Technology | IoT</code>
                     </div>
                 </div>
             </div>
             <div class="about-body" id="personal"> 
-                <h1 class="about-heading">GET TO KNOW ME</h1>
+                <h1>GET TO KNOW ME</h1>
                 <div class="about-me-content">
                     <div class="about-section-private" id="about-me-private">
                         <div class="private-info-wrapper">
@@ -215,21 +216,21 @@
                 </div>
             </div>
             <div class="slide-button-container">
-                <a class="slide-button" id="slide-button-right">
+                <a id="slide-button-right">
                     <i class="fas fa-3x fa-caret-right"></i>
                 </a>
-             </div>
+            </div>
         </section>
 
-        <section class="about-section" id="skill-section">
-            <h1 class="about-heading">SKILLS</h1>
+        <section class="classic-section" id="skill-section">
+            <h1>SKILLS</h1>
             <div id="chart-button-wrapper">
                 <button class="button is-primary is-outlined chart-button" id="chart-button-1" >WebDevelopment</button>
                 <button class="button is-warning is-outlined chart-button" id="chart-button-2">Data Analysis</button>
                 <button class="button is-danger is-outlined chart-button" id="chart-button-3">General</button>
                 <button class="button is-info is-outlined chart-button" id="chart-button-4">Language Usage</button>
             </div>
-            <div class="about-me-content" id="skills-content">
+            <div class="skills-content" id="skills-content">
                 <div class="zingCharts" id='skillChart'></div>
                 <div id="skill-explanation">
                     <h1 id="skill-name"></h1>
@@ -238,10 +239,9 @@
             </div>
         </section>
 
+        <section class="classic-section" id="projects">
 
-        <section id="projects">
-
-            <h1 id="project-heading">MY PROJECTS</h1>
+            <h1>MY PROJECTS</h1>
 
             <div class="project-row">
                 <div class="project-tile">
@@ -406,190 +406,25 @@
 
         </section>
 
-        <!-- <section id="projectsTwo">
-
-            <h1 id="project-heading">MY PROJECTS</h1>
-
-            <div class="project-row">
-                <div class="project-tile">
-                    <div class="tile-background" id="mealtimes-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020 - Present</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>mealTimes</h1>
-                        <p>A Tool to provide you inspiration for your nutrition, plan your weekly meals, calculate grocery lists and track calories</p>
-                        <code>html | css | javascript | flask | mongodb</code>
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-tile" id="berl-eat-tile">
-                    <div class="tile-background" id="berl-eat-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020 - Present</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>Berl-eat</h1>
-                        <p>A website to help you get the best out of culinary Berlin</p>
-                        <code>html | css | javascript | django | PostgreSQL | AWS</code>
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div class="tile-background" id="tabata-warriors-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020 - Present</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>Tabata Warriors</h1>
-                        <p>During the Covid Panedemic Bodyweight Fitness gained a lot traction. Here you will get information about exercises and workouts following Tabata Style</p>
-                        <code>html | css | javascript | django | PostgreSQL | AWS</code>
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-row">
-                <div class="project-tile">
-                    <div class="tile-background" id="personal-blog-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020 - Present</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>Personal Blog</h1>
-                        <p>A personal blog where I report mainly about my hikes and travels</p>
-                        <code>html | css | javascript</code>                       
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div class="tile-background" id="tech-docu-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>Technical Documentation</h1>
-                        <p>A exemplary technical documentation page for any sort of tool or website</p>
-                        <code>html | css</code>   
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div class="tile-background" id="github-tile-background">
-                    </div>
-                    <div class="project-time">
-                        <p>2020 - Present</p>
-                    </div>
-                    <div class="project-title">
-                        <h1>JS Snippets</h1>
-                        <p>A more comprehensive overview over code and snippets I worked can be found under my github and this overview page</p>
-                        <code>html | css| javascript</code>  
-                    </div>
-                    <div class="project-link-container">
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">Website</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                        <div class="project-link-div">
-                            <a href="#" class="project-link">
-                                <p class="project-link-para">GitHub</p>
-                                <i class="fas fa-2x fa-long-arrow-alt-right"></i>   
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section> -->
 
         <section id="contact-section">
-            <h4 id="contact-heading">Hi</h4>
-            <p id="contact-text">If you want to share a cup of coffee with me, find me on my favorite platforms.</p>
+            <h4>Hi</h4>
+            <p >If you want to share a cup of coffee with me, find me on my favorite platforms.</p>
             <div id="contact-link-wrapper">
-                <a target="_blank" href="https://github.com/TrisKast" class="contact-link" id="github-contact-link">
+                <a target="_blank" href="https://github.com/TrisKast" id="github-contact-link">
                     <i class="fab fa-github"></i> GITHUB
                 </a>
-                <a target="_blank" href="www.linkedin.com/in/tristan-kast" class="contact-link" id="linkedin-contact-link">
+                <a target="_blank" href="www.linkedin.com/in/tristan-kast" id="linkedin-contact-link">
                     <i class="fab fa-linkedin"></i> LNKEDIN
                 </a>
             </div>
         </section>
     </div>
+
     <footer>
         ©2020 - Tristan Kast - tristan.kast@gmail.com
     </footer>
 
-    <script type="module" defer src="script.js"></script>
+    <script type="module" defer src="/static/js/script.js"></script>
 </body>
 </html>
