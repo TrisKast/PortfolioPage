@@ -19,6 +19,11 @@
           flex-direction: column;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,11 +52,13 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 3;
+  padding: 0.5%;
 }
 
 #navbar .nav-container {
   text-align: center;
   border-radius: 15px;
+  padding: 0.5%;
 }
 
 #navbar .nav-link {
@@ -73,16 +80,29 @@ body {
 }
 
 #navbar #projects-nav-container {
-  background-color: #6D74DB;
-  color: white;
+  background-color: #247BA0;
+  color: #F8F5F6;
 }
 
 #navbar #github-nav-container {
-  background-color: #FFFFFF;
+  background-color: #F8F5F6;
 }
 
 #navbar #about-nav-container {
-  background-color: #FDEB5D;
+  background-color: #EEDB54;
+}
+
+#projects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .project-row {
@@ -96,6 +116,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .project-tile {
@@ -116,6 +142,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  margin: 1%;
 }
 
 .tile-background {
@@ -156,17 +183,17 @@ body {
 }
 
 .project-time {
-  /* flex: 1; */
   z-index: 2;
-  background-color: white;
+  background-color: #F8F5F6;
   width: 25%;
   text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .project-title {
-  /* flex: 5; */
   z-index: 2;
-  background-color: white;
+  background-color: #F8F5F6;
   width: 80%;
   text-align: center;
 }
@@ -185,12 +212,13 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 .project-link-div {
-  /* flex: 1;   */
   z-index: 2;
-  background-color: white;
+  background-color: #F8F5F6;
   text-align: center;
   width: 30%;
 }
@@ -231,7 +259,7 @@ body {
 }
 
 #welcome-section #welcome-para-wrapper h1 {
-  color: white;
+  color: #F8F5F6;
   font-weight: 700;
   font-size: 24px;
   font-family: Tahoma, Verdana, Geneva, sans-serif;
@@ -285,7 +313,7 @@ body {
 }
 
 .about-section-private {
-  height: 70vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +342,7 @@ body {
 }
 
 .classic-section {
-  min-height: 90vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,6 +356,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  padding: 2%;
 }
 
 .classic-section h1 {
@@ -335,16 +364,9 @@ body {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-}
-
-#projects {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slide-button-container {
@@ -370,21 +392,35 @@ body {
 }
 
 .about-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -webkit-box-flex: 14;
       -ms-flex: 14;
           flex: 14;
+}
+
+.about-body #download-cv {
+  position: absolute;
+  right: 10%;
+}
+
+.about-body h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
 .about-body .about-me-content {
@@ -393,23 +429,17 @@ body {
           flex: 14;
   font-weight: 150;
   font-size: 18px;
+  height: 80vh;
+  padding: 2%;
 }
 
 .about-body #about-me-text {
   font-size: large;
-}
-
-#welcome-text {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 4%;
 }
 
 #skill-section {
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,6 +453,16 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+#skill-section h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
 #skill-section .skills-content {
@@ -441,6 +481,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -457,8 +498,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 100%;
-  width: 100%;
   min-height: 550px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -469,6 +508,19 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+#skillName {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+#skillDescription {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #about-resume {
@@ -485,7 +537,6 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 70vh;
 }
 
 #time-line {
@@ -511,7 +562,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 5px solid grey;
+  border-left: 5px solid #2F323A;
 }
 
 #time-line-spacer {
@@ -523,7 +574,7 @@ body {
 #time-line-seperator {
   padding-top: 0;
   margin-top: 0;
-  background-color: #0c7e56;
+  background-color: #21213C;
 }
 
 #time-line-explanation {
@@ -555,17 +606,17 @@ body {
 
 #station-duration {
   font-size: normal;
-  color: grey;
+  color: #21213C;
 }
 
 .selected-station {
-  background-color: mediumaquamarine;
-  border-color: #0c7e56;
+  background-color: #87BF8B;
+  border-color: #21213C;
 }
 
 .station-hovered {
-  background-color: mediumaquamarine;
-  border-color: #0c7e56;
+  background-color: #87BF8B;
+  border-color: #21213C;
 }
 
 #chart-button-wrapper {
@@ -585,6 +636,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  padding: 2%;
 }
 
 .chart-button {
@@ -614,6 +666,8 @@ body {
 
 .private-me-infobox {
   text-align: center;
+  margin: 2%;
+  padding: 2%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -654,9 +708,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 1%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-box-content-tile:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-box-content-tile:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .infobox-unit {
@@ -757,8 +824,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 150;
-  background-color: #F5F5F5;
+  background-color: #F8F5F6;
   text-align: center;
+  margin: 3%;
+  padding: 2%;
 }
 
 #contact-section h4 {
@@ -802,18 +871,18 @@ body {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  color: white;
+  color: #F8F5F6;
   text-decoration: none;
 }
 
 #contact-section #contact-link-wrapper a:hover {
   text-decoration: none;
-  color: white;
+  color: #F8F5F6;
 }
 
 #contact-section #contact-link-wrapper a:visited {
   text-decoration: none;
-  color: white;
+  color: #F8F5F6;
 }
 
 #contact-section #contact-link-wrapper #linkedin-contact-link {
@@ -829,8 +898,8 @@ body {
 }
 
 footer {
-  background-color: #0D0F34;
-  color: white;
+  background-color: #21213C;
+  color: #F8F5F6;
   text-align: center;
 }
 
@@ -883,7 +952,7 @@ footer {
     line-height: 64px;
   }
   #welcome-para-wrapper h1 {
-    color: white;
+    color: #F8F5F6;
     font-weight: 450;
     font-size: 20px;
     font-family: Tahoma, Verdana, Geneva, sans-serif;
@@ -896,7 +965,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 90vh;
+    min-height: 70vh;
   }
   .time-line-station {
     -webkit-box-flex: 1;

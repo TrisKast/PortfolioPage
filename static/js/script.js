@@ -7,6 +7,7 @@ import {
   skillDescriptionDict
 } from './zingcharts.js'
 
+
 const navbar = document.querySelector('#navbar')
 const slideButtonLeft = document.querySelector('#slide-button-left');
 const slideButtonRight = document.querySelector('#slide-button-right');
@@ -21,15 +22,18 @@ const stationDuration = document.querySelector('#station-duration')
 const stationTechnologies = document.querySelector('#station-technologies')
 const stationDescription = document.querySelector('#station-description')
 const skillExplanation = document.querySelector('#skill-explanation')
-const skillName = document.querySelector('#skill-name')
-const skillDescription = document.querySelector('#skill-description')
+const skillName = document.querySelector('#skillName')
+const skillDescription = document.querySelector('#skillDescription')
 const stationTechHeading = document.querySelector('#station-tech-heading')
 
 resume.style.display='none' 
+resume.style.display='none' 
 personal.style.display='none' 
-skillExplanation.style.display='none'
-let currPersonalPos = 'text'
+//skillExplanation.style.display='none'
+let currPersonalPos = ''
 let displaySkillExplanation = false
+skillName.style.display='none'
+skillDescription.style.display='none'
 
 window.addEventListener("scroll", checkOffSet);
 chartButtons.forEach(button => button.addEventListener('click', changeChart));
@@ -39,11 +43,17 @@ resume_stations.forEach(station => station.addEventListener('click', activte_res
 resume_stations.forEach(station => station.addEventListener('mouseenter', setHiglight, false))
 resume_stations.forEach(station => station.addEventListener('mouseleave', revertHighlight, false))
 
-
+window.onload = function() {
+    currPersonalPos = 'text';
+    welcomeText.style.display='flex';
+};
 
 function changeChart(e){
     chartButtons.forEach(button => button.classList.add('is-outlined'))
     document.querySelector('#'+e.target.id).classList.remove('is-outlined')
+
+    skillName.innerHTML = ''
+    skillDescription.innerHTML = ''
 
     if(e.target.id == 'chart-button-1'){
         displaySkillExplanation = true;
@@ -79,14 +89,20 @@ function changeChart(e){
           });
     }
     if (displaySkillExplanation){
-        skillExplanation.style.display = 'block'
+        skillName.style.display = 'block'
+        skillDescription.style.display = 'block'
     }else{
-        skillExplanation.style.display = 'none'
+        skillName.style.display = 'none'
+        skillDescription.style.display = 'none'
     }
     
     chart.bind('node_mouseover', function(e) {
         skillName.innerHTML = e['data-vbtext']
-        skillDescription.innerHTML = skillDescriptionDict[e['data-uid']]
+        if(skillDescriptionDict[e['data-uid']]){
+            skillDescription.innerHTML = skillDescriptionDict[e['data-uid']]
+        } else {
+            skillDescription.innerHTML = ''
+        }
       });
 }
 
@@ -95,7 +111,7 @@ function slide_right(){
 
   if(currPersonalPos == 'text'){
       welcomeText.style.display='none' 
-      resume.style.display='block' 
+      resume.style.display='flex' 
       currPersonalPos = 'resume'
   }else if(currPersonalPos == 'resume'){
       resume.style.display='none' 
@@ -103,7 +119,7 @@ function slide_right(){
       currPersonalPos = 'personal'
   } else if(currPersonalPos == 'personal'){
       personal.style.display='none' 
-      welcomeText.style.display='block' 
+      welcomeText.style.display='flex' 
       currPersonalPos = 'text'
 
   } 
@@ -117,11 +133,11 @@ function slide_left(){
         currPersonalPos = 'personal'
     }else if(currPersonalPos == 'personal'){
         personal.style.display='none' 
-        resume.style.display='block' 
+        resume.style.display='flex' 
         currPersonalPos = 'resume'
     } else if(currPersonalPos == 'resume'){
         resume.style.display='none' 
-        welcomeText.style.display='block' 
+        welcomeText.style.display='flex' 
         currPersonalPos = 'text'
 
     }
@@ -129,20 +145,20 @@ function slide_left(){
 
 function checkOffSet(e){
     if(window.pageYOffset > 0){
-        navbar.style.backgroundColor = "white";
-        //navbar.style.padding = "0.5%";
+        navbar.style.backgroundColor = "#F8F5F6";
+        navbar.style.padding = "0.5%";
         navbar.style.borderBottom = "thin solid black";
     }
     else{
         navbar.style.backgroundColor = "transparent";
-        //navbar.style.padding = "0.5%";
+        navbar.style.padding = "0.5%";
         navbar.style.borderBottom = "none";
     }
 }
 
 function setHiglight(e){
     e.target.classList.add('station-hovered')
-    e.target.childNodes[1].style.color = 'hsl(159, 83%, 27%)'
+    e.target.childNodes[1].style.color = '#21213C'
 }
 
 function revertHighlight(e){
@@ -268,7 +284,7 @@ function activte_resume_station(e){
     
 }
    
-  zingchart.render({
+zingchart.render({
     id: 'skillChart',
     data: skillCloudConfig,
     width: '100%',

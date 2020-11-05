@@ -2,7 +2,7 @@ export const usageChartConfig = {
     "type": "line",
     "utc": true,
     "plotarea": {
-      "// margin": "dynamic 45 60 dynamic",
+      "margin": "dynamic 45 60 dynamic",
     },
     "legend": {
       "layout": "float",
@@ -13,8 +13,8 @@ export const usageChartConfig = {
       "adjust-layout": true,
       "toggle-action": "remove",
       "item": {
-        "// padding": 7,
-        "// marginRight": 17,
+        "padding": 7,
+        "marginRight": 17,
         "cursor": "hand"
       }
     },
@@ -57,7 +57,7 @@ export const usageChartConfig = {
         "border-radius": "5px",
         "border-width": "1px",
         "border-color": "#f6f7f8",
-        "// padding": "10px",
+        "padding": "10px",
         "font-weight": "bold"
       },
       "scale-label": {
@@ -243,7 +243,7 @@ export const webDevChartData = [{
     text: 'css',
     parent: 'front-end'
   }, {
-    id: 'Bnotstrap4',
+    id: 'bootstrap4',
     text: 'bootstrap4',
     parent: 'css',
     value: 1
@@ -325,7 +325,7 @@ export const webDevChartConfig = {
     plot: {
         tooltip: {
           align: 'left',
-          // padding: '10px 15px',
+          padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -339,13 +339,12 @@ export const webDevChartConfig = {
       },
             
     plotarea: {
-        // margin: '5px'
+        margin: '5px'
     },
     options: {
         space: 0,
         slice: 0,
-        palette: ['#7CA82B', '#29A2CC', '#D31E1E', '#EF8535', '#A05F18', '#265E96', '#6B7075', '#28536B', '#A87356', '#70AE6E', '#764493', '#BA163B', '#E8630A']
-    },
+        palette: ['#EEDB54', '#87BF8B', '#DE6C57', '#B74464', '#7678ED', '#B98A69', '#1FA6A5', '#3D348B', '#003844'],    },
     scaleR: {
         RefAngle: 180,
         Aperture: 180
@@ -361,13 +360,41 @@ export const dataAnalysisChartData = [{
     id: 'python',
     text: 'Python',
     parent: 'data-analysis',
-    value: 1
   },{
     id: 'r',
     text: 'R',
     parent: 'data-analysis',
     value: 1
-  },  {
+
+  }, {
+    id: 'analysis',
+    text: 'Analysis',
+    parent: 'python',
+  },{
+    id: 'visualisation',
+    text: 'Visualization',
+    parent: 'python',
+  },{
+    id: 'dplyr',
+    text: 'dplyr',
+    parent: 'analysis',
+    value: 1
+  },{
+    id: 'numpy',
+    text: 'Numpy',
+    parent: 'analysis',
+    value: 1
+  },{
+    id: 'pandas',
+    text: 'Pandas',
+    parent: 'analysis',
+    value: 1
+  },{
+    id: 'seaborn',
+    text: 'seaborn',
+    parent: 'visualisation',
+    value: 1
+  }, {
     id: 'octave',
     text: 'Octave',
     parent: 'data-analysis',
@@ -407,7 +434,7 @@ export const dataAnalysisChartConfig = {
     plot: {
         tooltip: {
           align: 'left',
-          // padding: '10px 15px',
+          padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -421,13 +448,12 @@ export const dataAnalysisChartConfig = {
       },
             
     plotarea: {
-        // margin: '5px'
+        margin: '5px'
     },
     options: {
         space: 0,
         slice: 0,
-        palette: ['#7CA82B', '#29A2CC', '#D31E1E', '#EF8535', '#A05F18', '#265E96', '#6B7075', '#28536B', '#A87356', '#70AE6E', '#764493', '#BA163B', '#E8630A']
-    },
+        palette: ['#EEDB54', '#87BF8B', '#DE6C57', '#B74464', '#7678ED', '#B98A69', '#1FA6A5', '#3D348B', '#003844'],    },
     scaleR: {
         RefAngle: 180,
         Aperture: 180
@@ -436,17 +462,17 @@ export const dataAnalysisChartConfig = {
 }
 
 export const generalChartData = [{
-    id: 'data-analysis',
-    text: 'data-analysis',
+    id: 'general',
+    text: 'General',
     parent: ''
   }, {
     id: 'latex',
     text: 'Latex',
-    parent: 'data-analysis'
+    parent: 'general'
   }, {
     id: 'git',
     text: 'Git',
-    parent: 'data-analysis'
+    parent: 'general'
   }, {
     id: 'gitlab',
     text: 'GitLab',
@@ -460,12 +486,12 @@ export const generalChartData = [{
   },{
     id: 'bash',
     text: 'Bash',
-    parent: 'data-analysis',
+    parent: 'general',
     value: 1
   },  {
     id: 'os',
     text: 'os',
-    parent: 'data-analysis'
+    parent: 'general'
   },  {
     id: 'linux',
     text: 'Linux',
@@ -497,13 +523,13 @@ export const generalChartData = [{
     value: 1
   }, {
     id: 'office',
-    text: 'Office',
+    text: 'MS Office',
     parent: 'windows',
     value: 1
   },  {
     id: 'docker',
     text: 'Docker',
-    parent: 'data-analysis',
+    parent: 'general',
     value: 1
   }];
 
@@ -512,7 +538,7 @@ export const generalChartConfig = {
     plot: {
         tooltip: {
           align: 'left',
-          // padding: '10px 15px',
+          padding: '10px 15px',
           borderRadius: '3px',
           thousandsSeparator: ','
         },
@@ -526,13 +552,12 @@ export const generalChartConfig = {
       },
             
     plotarea: {
-        // margin: '5px'
+        margin: '5px'
     },
     options: {
         space: 0,
         slice: 0,
-        palette: ['#7CA82B', '#29A2CC', '#D31E1E', '#EF8535', '#A05F18', '#265E96', '#6B7075', '#28536B', '#A87356', '#70AE6E', '#764493', '#BA163B', '#E8630A']
-    },
+        palette: ['#EEDB54', '#87BF8B', '#DE6C57', '#B74464', '#7678ED', '#B98A69', '#1FA6A5', '#3D348B', '#003844'],    },
     scaleR: {
         RefAngle: 180,
         Aperture: 180
@@ -543,13 +568,15 @@ export const generalChartConfig = {
 export const skillCloudConfig = {
     type: 'wordcloud',
     options: {
-      text: 'Python Javascript Java C++ HTML CSS SASS Vue.js Bulma Bootstrap MongoDB PostgreSQL Typescript ES6 Django Flask Linux MacOS Git GitHub BitBucket Bash',
+      text: `Python Javascript Java C++ HTML CSS SASS Vue.js Bulma Bootstrap4 MongoDB PostgreSQL Typescript 
+            ES6 Django Flask Linux MacOS Git GitHub BitBucket MS-Office Docker Windows Ubuntu CentOS 
+            GitLab Bash Latex Knime Tableau Octave SnakeMake Nextflow Groovey`,
       aspect: 'spiral',
       colorType: 'palette',
       ignore: ['establish', 'this'],
       maxItems: 50,
       minLength: '3px',
-      palette: ['#D32F2F', '#1976D2', '#9E9E9E', '#E53935', '#1E88E5', '#7E57C2', '#F44336', '#2196F3', '#A1887F'],
+      palette: ['#EEDB54', '#87BF8B', '#DE6C57', '#B74464', '#7678ED', '#B98A69', '#1FA6A5', '#3D348B', '#003844'],
       rotate: true,
       style: {
         hoverState: {
