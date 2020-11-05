@@ -5,6 +5,7 @@ export const usageChartConfig = {
       "margin": "dynamic 45 60 dynamic",
     },
     "legend": {
+      'fontFamily': 'Quicksand',
       "layout": "float",
       "background-color": "none",
       "border-width": 0,
@@ -58,7 +59,8 @@ export const usageChartConfig = {
         "border-width": "1px",
         "border-color": "#f6f7f8",
         "padding": "10px",
-        "font-weight": "bold"
+        "font-weight": "bold",
+        
       },
       "scale-label": {
         "font-color": "#000",
@@ -207,9 +209,9 @@ export const usageChartConfig = {
       {
         "values": [0,0,0,0,1,1,1,2,2,2,2,2,2,2,2,2,2,3],
         "text": "HTML+CSS",
-        "line-color": "rgb(90, 177, 187)",
+        "line-color": "#F18701",
         "legend-item": {
-          "background-color": "rgb(90, 177, 187)",
+          "background-color": "#F18701",
           "borderRadius": 5,
           "font-color": "white"
         },
@@ -217,14 +219,14 @@ export const usageChartConfig = {
           "visible": false
         },
         "marker": {
-          "background-color": "rgb(90, 177, 187)",
+          "background-color": "#F18701",
           "border-width": 1,
           "shadow": 0,
           "border-color": "#faa39f"
         },
         "highlight-marker": {
           "size": 6,
-          "background-color": "rgb(90, 177, 187)",
+          "background-color": "#F18701",
         }
       }
     ]
@@ -579,11 +581,13 @@ export const skillCloudConfig = {
       palette: ['#EEDB54', '#87BF8B', '#DE6C57', '#B74464', '#7678ED', '#B98A69', '#1FA6A5', '#3D348B', '#003844'],
       rotate: true,
       style: {
+        fontFamily: 'Quicksand',
         hoverState: {
           backgroundColor: '#1976D2',
           borderColor: 'none',
           borderRadius: '3px',
-          fontColor: 'white'
+          fontColor: 'white',
+          fontFamily: 'Quicksand',
         }
       }
     }

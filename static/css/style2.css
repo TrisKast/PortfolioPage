@@ -22,6 +22,7 @@
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 html {
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans Condensed", Tahoma, Verdana, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #navbar {
@@ -262,7 +263,6 @@ body {
   color: #F8F5F6;
   font-weight: 700;
   font-size: 24px;
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
 #welcome-section #head-cutout {
@@ -427,7 +427,7 @@ body {
   -webkit-box-flex: 14;
       -ms-flex: 14;
           flex: 14;
-  font-weight: 150;
+  font-weight: 300;
   font-size: 18px;
   height: 80vh;
   padding: 2%;
@@ -868,9 +868,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 5%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  margin: 5%;
   color: #F8F5F6;
   text-decoration: none;
 }
@@ -955,7 +957,6 @@ footer {
     color: #F8F5F6;
     font-weight: 450;
     font-size: 20px;
-    font-family: Tahoma, Verdana, Geneva, sans-serif;
   }
   #about-resume {
     -webkit-box-orient: vertical;
