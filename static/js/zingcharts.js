@@ -234,7 +234,7 @@ export const usageChartConfig = {
 
 export const webDevChartData = [{
     id: 'WebDevelopment',
-    text: 'WebDevelopment',
+    text: 'webdevelopment',
     parent: ''
   }, {
     id: 'front-end',
@@ -275,7 +275,7 @@ export const webDevChartData = [{
     value: 1
   }, {
     id: 'vuejs',
-    text: 'Vue.js',
+    text: 'vue.js',
     parent: 'javascript',
     value: 1
   }, {
@@ -311,8 +311,8 @@ export const webDevChartData = [{
     parent: 'databases',
     value: 1
   }, {
-    id: 'PostGresSQL',
-    text: 'PostGresSQL',
+    id: 'PostgresSQL',
+    text: 'PostgresSQL',
     parent: 'databases',
     value: 1
   }, {
@@ -595,7 +595,23 @@ export const skillCloudConfig = {
 
 export const skillDescriptionDict = 
 {
-'html':'HTML is the basic of Internet',
-'css':'CSS makes the internet pretty',
-'javascript':'Javascript makes internet fun!'
+'html':'There can\'t be no web without HTML',
+'css':'Browsing websites with no styling would be boring. \
+        Although many developers don\'t like writing css code it is important, \
+        since it can massively increase usability and therefore better the user experience. \
+        I am able to use the flex display, the grid display, use transitions and basic transformations.',
+'javascript':'Javascript brings the internet to life! Coming from a more programming \
+              and less design heavy background I am especially interessted in writing good javascript.',
+'bulma':'Not being as popular as bootstrap I really like using Bulma to set up nice css solutons \
+        out of the box quiet fast. I brings a different style as most people are used to the standard bootstrap visualisations by now.',
+'bootstrap4':'Bootstrap is probably the most used css framework ever and it is hard to not get at least some experience with it. \
+              I think it is a great solution to get up nice visuals super fast \
+              but by now most people are used to the \'bootstrapy\' look and you won\'t impress them by using it',
+'bootstrap4':'Bootstrap is probably the most used css framework ever and it is hard to not get at least some experience with it. \
+              I think it is a great solution to get up nice visuals super fast \
+              but by now most people are used to the \'bootstrapy\' look and you won\'t impress them by using it',
+'vuejs':'With Angular and React still being the most used front-end frameworks \
+          vue.js is still more of a underdog but with huge potential. It is super lightweight and especially developed for \
+          single page applications. I have set up multiple web pages, \
+          like a web user-interface for the usage of database at my current employee, using it and can say I have advanced knowledge it it.',
 }
