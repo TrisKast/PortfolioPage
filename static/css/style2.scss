@@ -273,6 +273,9 @@ body{
         @extend %rounded-box;
         font-size: large;
         padding: 4%;
+
+        display: flex;
+        align-items: center;
         
     }
 
@@ -426,7 +429,14 @@ body{
         justify-content: stretch;
     }
 
-    .skills-content{
+
+    #skills-content{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;
+
         flex:14;
         font-weight: 150;
         font-size: 18px;
@@ -436,15 +446,6 @@ body{
             min-height: 550px;   
             align-items: center;
         }
-    }
-
-    #skills-content{
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: space-evenly;
-
 
         #skillName{
             position: absolute;
@@ -580,9 +581,7 @@ body{
         width: 30%;
         @extend %rounded-box;
     }
-    
-    .project-link-para{
-    }
+
     
     
     .project-link{
@@ -683,90 +682,140 @@ footer{
 
 
 
-// @media only screen and (max-width: 700px) {
-//     .project-row{
-//         flex-direction:column;
-//     }
-
-//     .about-me-private-content{
-//         flex-direction: column;
-//     }
-
-//     .infobox-content{
-//         flex:20;
-//         height: 100px;
-//         display:flex;
-//         flex-direction: row;
-//         justify-content: space-around;
-//     }
-
-//     #contact-section{
-//         // margin-left: 3%;
-//         // margin-right: 3%;
-//     }
-
-//     .classic-section{
-//         height: auto;    
-//     }
 
 
+@media only screen and (max-width: 1000px){
 
-//     .about-section-private{
-//         flex-direction: column;
-//         height: auto;
-//     }
+    #skill-section{
+        min-height: auto;
 
-//     #welcome-section{
-//         line-height: 30px;
-//     }
+        #skills-content{
+            flex-direction: column;
 
-//     #welcome-para-wrapper{
-//         flex:1;
-//         text-align: center;
-//         line-height: 64px;
+            #skillName{
+                position: static;
+                margin: 0;
+                text-align: left;
+                width: 100%;
+                margin: 2%;
+            }
+
+            #skillDescription{
+                position: static;
+                text-align: left;
+                width: 100%;
+                margin: 2%;
+                hyphens: auto; 
+                text-align: justify
+            }
+        }
+    }
+
+    // .classic-section{
+    //     min-height: auto;
+    // }
+
+    .about-body{
+
     
-//         h1{
-//             color:$base-white;
-//             font-weight: 450;
-//             font-size: 20px;
-//             //font-family: Tahoma, Verdana, Geneva, sans-serif;
+        .about-section-private{
+
+            flex-direction: column;
+
+    
+    
+            .private-info-wrapper{
+
+                flex-direction: column;
+
+    
+                .spacer-infobox{
+                    display: none;
+                }
+    
+            
+            }
+        }
+    }
+
+
+
+
+    #projects{
+
+    
+        .project-row{
+            flex-direction:column;
+        }
+        
+        .project-tile{
+            margin-right: 1%;
+            margin-left: 1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    
+        .project-time{
+            width: auto;
+            padding:1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        .project-title{
+            padding:2%
+        }
+        
+        .project-link-container{
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+        
+        .project-link-div{
+            width: 20%;
+            padding:1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .project-link-para{
+            margin:0;
+        }
+    }
+}
+
+// @media only screen and (max-width: 768px) {
+//     #welcome-section{
+//         @extend %horizontal-flex-box;
+//         line-height: 64px;
+//         height: 50vh; 
+    
+//         #welcome-spacer{
+//             flex:1;
 //         }
-//     }
-
-//     #about-resume{
-//         flex-direction: column;
-//         justify-content: center;
-//         min-height: 70vh;
-//         // margin-right: 2%;
-//         // margin-left: 2%;
-//         // margin-bottom: 3%;
-//         // margin-top: 3%;
-//     }
-
-//     .time-line-station{
-//         flex:1;
-//         display: flex;
-//         align-items: center;
-//         border-left: 5px solid grey;
-//         border-right: 5px solid grey;
-//         // padding-right: 3%;
-//         // padding-left: 3%;
-//     }
-
-
-
-
-
-//   }
-
-//   @media only screen and (max-width: 1300px) {
-//     #skills-content{
-//         flex-direction: column;
-//     }
-//   }
-
-// @media only screen and (max-width: 1300px) {
-//     #skills-content{
-//         flex-direction: column;
+        
+//         #welcome-para-wrapper{
+//             flex:1;
+//             text-align: center;
+//             line-height: 64px;
+        
+//             h1{
+//                 color:$base-white;
+//                 font-weight: 700;
+//                 font-size: 24px;
+//             }
+//         }
+    
+//         #head-cutout{
+//             flex:1;
+//         }
+        
+//         #welcome-background{
+//             position: absolute;
+//             z-index: -1;
+//             object-fit: cover;
+//             height: 100vh; 
+//             width: 100vw; 
+//         }
 //     }
 // }

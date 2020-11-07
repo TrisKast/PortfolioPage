@@ -255,8 +255,8 @@ export const webDevChartData = [{
     parent: 'css',
     value: 1
   }, {
-    id: 'SASS',
-    text: 'SASS',
+    id: 'scss',
+    text: 'scss',
     parent: 'css',
     value: 1
   }, {
@@ -266,6 +266,11 @@ export const webDevChartData = [{
   }, {
     id: 'ES6',
     text: 'ES6',
+    parent: 'javascript',
+    value: 1
+  }, {
+    id: 'JS2016/2017',
+    text: 'JS2016/2017',
     parent: 'javascript',
     value: 1
   }, {
@@ -305,6 +310,11 @@ export const webDevChartData = [{
     id: 'databases',
     text: 'databases',
     parent: 'back-end'
+  }, {
+    id: 'nodejs',
+    text: 'node.js',
+    parent: 'back-end',
+    value: 1
   }, {
     id: 'MongoDB',
     text: 'MongoDB',
@@ -601,17 +611,29 @@ export const skillDescriptionDict =
         since it can massively increase usability and therefore better the user experience. \
         I am able to use the flex display, the grid display, use transitions and basic transformations.',
 'javascript':'Javascript brings the internet to life! Coming from a more programming \
-              and less design heavy background I am especially interessted in writing good javascript.',
+              and less design heavy background I am especially interessted in writing good javascript code. \
+              And lately I am using it quite a lot, as you can see at its line in the line chart. JS plays a major role \
+              in almost all my latest projects. Furthermore I think that a solid knowledge of JS is key to using all the frameworks \
+              that are built on it and so popular right now.',
 'bulma':'Not being as popular as bootstrap I really like using Bulma to set up nice css solutons \
-        out of the box quiet fast. I brings a different style as most people are used to the standard bootstrap visualisations by now.',
+        out of the box quiet fast. I brings a different style as most people are used to the standard bootstrap visualisations by now. \
+        The column system is easy to pick up and there lots of nice little gimmicks.',
 'bootstrap4':'Bootstrap is probably the most used css framework ever and it is hard to not get at least some experience with it. \
               I think it is a great solution to get up nice visuals super fast \
-              but by now most people are used to the \'bootstrapy\' look and you won\'t impress them by using it',
-'bootstrap4':'Bootstrap is probably the most used css framework ever and it is hard to not get at least some experience with it. \
-              I think it is a great solution to get up nice visuals super fast \
-              but by now most people are used to the \'bootstrapy\' look and you won\'t impress them by using it',
+              but by now most people are used to the \'bootstrapy\' look and you won\'t impress them by using it. \
+              With the new version though, things might getting spiced up again sonn.',
 'vuejs':'With Angular and React still being the most used front-end frameworks \
           vue.js is still more of a underdog but with huge potential. It is super lightweight and especially developed for \
           single page applications. I have set up multiple web pages, \
-          like a web user-interface for the usage of database at my current employee, using it and can say I have advanced knowledge it it.',
+          like a web user-interface for the usage of database at my current employee, using it and can say I have advanced knowledge it it. \
+          Even the most basic features like v-bind or v-if can simplify your code so much.',
+'scss':'scss is one of the most recent skills I have picked up and honestly I don\'t know why. It makes your css code so much more neat and clean. \
+        Integrating such an technique in a well running system may be an overkill but saved me already a lot of time debugging, and fom now on I will definitely write scss right from the beginning.',
+'typescript':'In my opinion typescript is one of the next logical steps from JS on. Allowing the developer to make is code stricter leads to cleaner and \
+              easier to maintain code. I just picked typescript up and rewriting existing projects in TS in painful, but if implemented from the beginning a huge gain.',
+'JS2016/2017':'With the new generations of features JS gets cleaner and easier. Since programming is field that is constantly envolving it is the responsability \
+              of a developer to stay up to date with the newest features. I always try to use them as much as possible. What I liked especially in these rounds are \
+              the Object methods and the Async functions.',
+'ES6':'The features gaines with ES6 are awesome. Arrow functions, array methods and classes add a lot effectivness and readability to your code \
+        and in 2020 there is not a single excuse to not using them.'
 }
