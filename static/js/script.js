@@ -26,7 +26,7 @@ const skillName = document.querySelector('#skillName')
 const skillDescription = document.querySelector('#skillDescription')
 const stationTechHeading = document.querySelector('#station-tech-heading')
 
-resume.style.display='none' 
+
 resume.style.display='none' 
 personal.style.display='none' 
 //skillExplanation.style.display='none'
@@ -34,6 +34,14 @@ let currPersonalPos = ''
 let displaySkillExplanation = false
 skillName.style.display='none'
 skillDescription.style.display='none'
+
+var x = window.matchMedia("(max-width: 768px)")
+if (x.matches) {
+    slideButtonLeft.style.display='none'
+    slideButtonRight.style.display='none'
+    resume.style.display='flex' 
+    personal.style.display='block' 
+}
 
 window.addEventListener("scroll", checkOffSet);
 chartButtons.forEach(button => button.addEventListener('click', changeChart));
@@ -109,37 +117,43 @@ function changeChart(e){
 
 function slide_right(){
 
-  if(currPersonalPos == 'text'){
-      welcomeText.style.display='none' 
-      resume.style.display='flex' 
-      currPersonalPos = 'resume'
-  }else if(currPersonalPos == 'resume'){
-      resume.style.display='none' 
-      personal.style.display='block' 
-      currPersonalPos = 'personal'
-  } else if(currPersonalPos == 'personal'){
-      personal.style.display='none' 
-      welcomeText.style.display='flex' 
-      currPersonalPos = 'text'
-
-  } 
+  if (x.matches) {
+    console.log('screen to narrow')
+  } else {
+    if(currPersonalPos == 'text'){
+        welcomeText.style.display='none' 
+        resume.style.display='flex' 
+        currPersonalPos = 'resume'
+    }else if(currPersonalPos == 'resume'){
+        resume.style.display='none' 
+        personal.style.display='block' 
+        currPersonalPos = 'personal'
+    } else if(currPersonalPos == 'personal'){
+        personal.style.display='none' 
+        welcomeText.style.display='flex' 
+        currPersonalPos = 'text'
+    } 
+  }
 }
 
 function slide_left(){
+    if (x.matches) {
+        console.log('screen to narrow')
+    } else {
+        if(currPersonalPos == 'text'){
+            welcomeText.style.display='none' 
+            personal.style.display='block' 
+            currPersonalPos = 'personal'
+        }else if(currPersonalPos == 'personal'){
+            personal.style.display='none' 
+            resume.style.display='flex' 
+            currPersonalPos = 'resume'
+        } else if(currPersonalPos == 'resume'){
+            resume.style.display='none' 
+            welcomeText.style.display='flex' 
+            currPersonalPos = 'text'
 
-    if(currPersonalPos == 'text'){
-        welcomeText.style.display='none' 
-        personal.style.display='block' 
-        currPersonalPos = 'personal'
-    }else if(currPersonalPos == 'personal'){
-        personal.style.display='none' 
-        resume.style.display='flex' 
-        currPersonalPos = 'resume'
-    } else if(currPersonalPos == 'resume'){
-        resume.style.display='none' 
-        welcomeText.style.display='flex' 
-        currPersonalPos = 'text'
-
+        }
     }
 }
 
