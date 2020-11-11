@@ -1,4 +1,4 @@
-# Under construction #
+# UNDER CONSTRUCTION #
 # Portfolio Page #
 
 I built myself a place to live in the Internet!
