@@ -96,19 +96,21 @@ body{
     .nav-link{
         flex: 1;
         @extend %boring-link;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     #projects-nav-container{
-        background-color: $base-color-celadon;
-        color:$base-white;
+        //background-color: $base-color-celadon;
+        //color:$base-white;
     }
     
     #github-nav-container{
-        background-color: $base-white;
+        //background-color: $base-white;
     }
     
     #about-nav-container{
-        background-color: $base-yellow;
+        //background-color: $base-yellow;
     }
 }
 
@@ -116,14 +118,19 @@ body{
     @extend %horizontal-flex-box;
     line-height: 64px;
     height: 100vh; 
+    position: relative;
 
     #welcome-spacer{
         flex:1;
     }
     
     #welcome-para-wrapper{
-        flex:1;
-        text-align: center;
+        position: absolute;
+        width: 30%;
+        text-align: right;
+        right: 5%;
+        // flex:1;
+        // text-align: center;
         line-height: 64px;
     
         h1{
@@ -790,6 +797,33 @@ footer{
 
 @media only screen and (max-width: 768px) {
 
+    #skill-section{
+        #chart-button-wrapper{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            padding: 2%;
+        }
+    }
+
+    #navbar{
+    
+        display: absolute;
+        top:0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        
+        width: 100%;
+        padding:2%;
+    
+        .nav-container{
+            margin: 2%;
+        }
+    }
+
     .about-body{
         .about-me-content{
             flex:14;
@@ -801,6 +835,7 @@ footer{
     }
 
     #welcome-section{
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -814,9 +849,12 @@ footer{
         }
         
         #welcome-para-wrapper{
+            position: relative;
+            width: 66%;
             flex:1;
             text-align: center;
             line-height: 64px;
+            padding: 4%;
         
             h1{
                 color:$base-white;
@@ -824,6 +862,10 @@ footer{
                 font-size: 24px;
             }
         }
+
+        
+
+        
     
         #head-cutout{
             flex:1;
