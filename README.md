@@ -1,4 +1,5 @@
-# Portfolio Page # 
+# Under construction #
+# Portfolio Page #
 
 I built myself a place to live in the Internet!
 
@@ -9,5 +10,7 @@ I tried to use as much plain JS as possible, since in my opinion most frameworks
 The same goes for css, though I used bulma for some buttons. Also I tried myself a bit on SCSS and it feels quite handy! <br>
 
 
+### It is still under heavy construction and I try to work on it as much as I can squeeze im. ###
 
-You can find the current version under: ** hhtps://tristankast.com **
+
+You can find the current version under: **htps://tristankast.com**
