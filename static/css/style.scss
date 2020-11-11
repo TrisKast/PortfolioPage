@@ -457,7 +457,7 @@ body{
 
         #skillName{
             position: absolute;
-            left: 0;
+            left: 2%;
             top:0;
             margin: 0;
             text-align: left;
@@ -466,7 +466,7 @@ body{
 
         #skillDescription{
             position: absolute;
-            right: 0;
+            right: 2%;
             top:0; 
             text-align: right;
             width: 20%;
@@ -832,6 +832,37 @@ footer{
             height: auto;
             padding: 2%;
         }
+
+        #download-cv{
+            position: static;
+        }
+
+        #about-resume{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch ;
+
+            #time-line{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                margin: 2%;
+                padding: 2%;
+            
+                .time-line-station{
+                    flex:2;
+                    display: flex;
+                    align-items: center;
+                    border-left: 5px solid $base-color-onyx; 
+                    border-right: 5px solid $base-color-onyx;  
+                    padding: 3%;
+                }
+            }
+        }
+
+
+
     }
 
     #welcome-section{

@@ -552,7 +552,7 @@ body {
 
 #skill-section #skills-content #skillName {
   position: absolute;
-  left: 0;
+  left: 2%;
   top: 0;
   margin: 0;
   text-align: left;
@@ -561,7 +561,7 @@ body {
 
 #skill-section #skills-content #skillDescription {
   position: absolute;
-  right: 0;
+  right: 2%;
   top: 0;
   text-align: right;
   width: 20%;
@@ -956,6 +956,52 @@ footer {
     font-size: 18px;
     height: auto;
     padding: 2%;
+  }
+  .about-body #download-cv {
+    position: static;
+  }
+  .about-body #about-resume {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .about-body #about-resume #time-line {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+  }
+  .about-body #about-resume #time-line .time-line-station {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-left: 5px solid #2F323A;
+    border-right: 5px solid #2F323A;
+    padding: 3%;
   }
   #welcome-section {
     display: -webkit-box;
