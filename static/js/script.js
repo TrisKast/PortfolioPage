@@ -190,20 +190,24 @@ function activte_resume_station(e){
 
         stationName.innerHTML = 'Bachelor of Science, Bioinformatics'
         stationDuration.innerHTML = 'Eberhard-Karls University, Tübingen <br> 04/2012 - 10/2016'
-        stationDescription.innerHTML = `<p>The Bachelor's Degree in Bioinformatics teached me an overall basic understandig of Computerscience. The theoretical as the technical aspects as well as some hands on experience in weekly exercises in several languages over the years.
-         Furthermore we learned the biology and chemistry needed to understand bioinformatics experiments and concepts.</p>
+        stationDescription.innerHTML = `<p>
+        The Bachelor's Degree in Bioinformatics teached me an overall basic understandig of Computerscience. 
+        The theoretical as the technical aspects as well as some hands on experience in weekly exercises in several languages over the years.
+        This includes Java, C++, Javascript, Python and R, basic concepts of development and training in the "developers way of thinking".
+        Furthermore we learned the biology and chemistry needed to understand bioinformatics experiments and approaches and 
+        strengthend this knowledge in multiple laboratory intervals.</p>
         <ul>
             <li>
-                Basic knowlege of varios languages, e.g. Java, Python and Javascript
+                Several courses in Computer Science and Mathematics
             </li>
             <li>
-                Basics knowledge of Algorithms, network technolgies and datastructures
+                Training in various languages, e.g. Java, Python or Javascript
             </li>
             <li>
-                Basic knowlege about network technolgies 
+                Knowledge of algorithms, datastrcutures and network technolgies
             </li>
             <li>
-                Basic knowlege and terminolgy of Bioinformatics, Biochemistry, Biology and Chemistry
+                Theoretical and practical training in Biology and Chemistry
             </li>
         </ul>`
         stationTechHeading.innerHTML = 'Relevant Courses:'
@@ -215,19 +219,19 @@ function activte_resume_station(e){
 
         stationName.innerHTML = 'Master of Science, Bioinformatics'
         stationDuration.innerHTML = 'Eberhard-Karls University, Tübingen <br> 10/2016 - 01/2019'
-        stationDescription.innerHTML =  `<p>In the following Masters Course the focus layed heavily on analysis and visualisation. Herefore most of the assignments were handled in Python and R.</p>
+        stationDescription.innerHTML =  `<p>In the following two years Masters Course the focus layed heavily on data analysis and visualisation. 
+                                            Herefore most of the multiple weekly assignments were handled in Python and R. 
+                                            I dived deep into bioinformatics, data processing and scripting, all proficiencies that were also handled in two intense block courses.
+                                            On the biochemistry side we focussed only on aspects that are of importance for bioinformatics, like genetics or micro biology.</p>
         <ul>
             <li>
                 Advanced knowlege of Python, R and Javascript
             </li>
             <li>
-                Focus on Dataanalysis and Datavisualization
+                Focus on data analysis and data visualization
             </li>
             <li>
                 Deep understanding of Bioinformatics and processing of bioinformatic data
-            </li>
-            <li>
-                Advanced knowlege and cell biology, micro biology and genetics
             </li>
         </ul>`
         stationTechHeading.innerHTML = 'Relevant Courses:'
@@ -238,7 +242,7 @@ function activte_resume_station(e){
         document.querySelector('#station-working-student-wrapper').classList.add('selected-station')
 
         stationName.innerHTML = 'Working Student'
-        stationDuration.innerHTML = 'Eberhard-Karls University, Applied Bioinformatics Group, Tübingen, <br> 02/2019 - 08/2020'
+        stationDuration.innerHTML = 'Eberhard-Karls University, Applied Bioinformatics Group, Tübingen, <br> 04/2017 - 03/2018'
         stationDescription.innerHTML = ` <ul>
             <li>
                 MD-Simulations with GROMCAS and PyMOL
@@ -247,53 +251,49 @@ function activte_resume_station(e){
                 Implementing a RESTful API for ArangoDB, a flexbile multi-model database
             </li>
         </ul>`
-        stationTechHeading.innerHTML = 'Used Technologies:'
-        stationTechnologies.innerHTML = 'GROMACS | PyMOL | Python | AQL (SQL) | Javascript | Flask'
+        stationTechHeading.innerHTML = 'Stack:'
+        stationTechnologies.innerHTML = 'GROMACS | PyMOL | Python | AQL (SQL) | Java'
 
     } else if(e.target.id == 'station-DZNE-wrapper' || e.target.id == 'station-DZNE'){
         document.querySelector('#station-DZNE-wrapper').classList.add('selected-station')
 
         stationName.innerHTML = 'Computational Scientist'
         stationDuration.innerHTML = 'German Center for Neurodegenerative Diseases, Tübingen, <br> 02/2019 - 08/2020'
-        stationDescription.innerHTML = 'I did this and that'
         stationDescription.innerHTML = ` <ul>
             <li>
-                Whole genome assembly with second and third generation sequencing data
+                Whole Genome Sequencing assembly with data received by Illumina and Oxford Nanopore Technologies
             </li>
             <li>
                 SNP and structural variant detection
             </li>
             <li>
-                Scripting of bioinformatic analysis pipelines, e.g. for MicroRNA-Seq, CAGE-Seq or enrichment analysis data
+            Scripting of analysis pipelines for different kinds of data, e.g. MicroRNA-Seq or CAGE-Seq
             </li>
             <li>
-                Explorative analysis of clinical bulk and SingleCell RNA-Seq data, e.g. <br>
+            Bioinformatic analysis of clinical bulk and SingleCell RNA-Seq data, e.g. <br>
                 - Differential expression analysis <br>
                 - Pathway regulation analysis <br>
                 - Markergene detection
             </li>
         </ul>`
-        stationTechHeading.innerHTML = 'Used Technologies:'
-        stationTechnologies.innerHTML = 'Python (numpy | pandas | dplyr) | R (DeSeq2 | EdgeR) | Docker | Nextflow | Snakemake | Bash | Ubuntu | CentOS | SQL | Git | Groovy | Kanban'
+        stationTechHeading.innerHTML = 'Stack:'
+        stationTechnologies.innerHTML = 'Python (numpy | pandas | dplyr) | Jupyter Notebook | R (DeSeq2 | EdgeR) | Docker | Nextflow | Snakemake | Bash | Ubuntu | CentOS | SQL | Git | Groovy | Kanban'
 
     }else if(e.target.id == 'station-MPUSP-wrapper' || e.target.id == 'station-MPUSP'){
         document.querySelector('#station-MPUSP-wrapper').classList.add('selected-station')
 
         stationName.innerHTML = 'Software Engineer'
-        stationDuration.innerHTML = 'Max Planck Unit for the Science of Pathogenes, Berlin, <br> 02/2020 - current'
+        stationDuration.innerHTML = 'Max Planck Unit for the Science of Pathogenes, Berlin, <br> 02/2020 - currently'
         stationDescription.innerHTML =  ` <ul>
         <li>
-            Data analysis and visualization in the context of sequence bioinformatics on complex CRISPR data
+            Bioinformatic analysis and visualization of heterogenous data, often generated by CRISPR experiments
         </li>
         <li>
-            Conception, maintainance and implementation of new features for the institutes database service, e.g. <br>
-            - Data storage and retrival <br>
-            - Data visualization <br>
-            - Ordering 
+            Full-Stack Development of an internal webpage to interact with the institute’s sample database and do basic data science / data visualization
         </li>
     </ul>`
-        stationTechHeading.innerHTML = 'Used Technologies:'
-        stationTechnologies.innerHTML = 'Python | Javascript | Vue.js | Flask | Linux | MongoDb | Server Setup'
+        stationTechHeading.innerHTML = 'Stack:'
+        stationTechnologies.innerHTML = 'Python | Jupyter Notebook | Javascript | HTML | CSS | Vue.js | Flask | Scientific Linux | MongoDb | NGINX | Gunicorn | Supervisor'
     }
     
 }

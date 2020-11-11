@@ -502,7 +502,7 @@ body {
 }
 
 #skill-section {
-  min-height: 80vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
