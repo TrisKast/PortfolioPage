@@ -710,7 +710,7 @@ footer{
             flex-direction: column;
 
             #skillName{
-                position: ..;
+                position: static;
                 margin: 0;
                 text-align: left;
                 width: 100%;
@@ -718,7 +718,7 @@ footer{
             }
 
             #skillDescription{
-                position: ..;
+                position: static;
                 text-align: left;
                 width: 100%;
                 margin: 2%;
@@ -843,7 +843,7 @@ footer{
         }
 
         #download-cv{
-            position: ..;
+            position: static;
             // border-color: blue;
             // color: blue;
 

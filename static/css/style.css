@@ -435,67 +435,67 @@ body {
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #book1 {
-  background-image: url("static/images/book1.jpg");
+  background-image: url("../images/book1.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #book2 {
-  background-image: url("static/images/book2.jpeg");
+  background-image: url("../images/book2.jpeg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #book3 {
-  background-image: url("static/images/book3.jpg");
+  background-image: url("../images/book3.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #book4 {
-  background-image: url("static/images/book4.jpg");
+  background-image: url("../images/book4.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #podcast1 {
-  background-image: url("static/images/podcast1.jpg");
+  background-image: url("../images/podcast1.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #podcast2 {
-  background-image: url("static/images/podcast2.jpeg");
+  background-image: url("../images/podcast2.jpeg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #podcast3 {
-  background-image: url("static/images/podcast3.png");
+  background-image: url("../images/podcast3.png");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #podcast4 {
-  background-image: url("static/images/podcast4.png");
+  background-image: url("../images/podcast4.png");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #show1 {
-  background-image: url("static/images/show1.jpg");
+  background-image: url("../images/show1.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #show2 {
-  background-image: url("static/images/show2.jpg");
+  background-image: url("../images/show2.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #show3 {
-  background-image: url("static/images/show3.jpg");
+  background-image: url("../images/show3.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #show4 {
-  background-image: url("static/images/show4.jpeg");
+  background-image: url("../images/show4.jpeg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #song1 {
-  background-image: url("static/images/song1.jpg");
+  background-image: url("../images/song1.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #song2 {
-  background-image: url("static/images/song2.jpg");
+  background-image: url("../images/song2.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #song3 {
-  background-image: url("static/images/song3.jpg");
+  background-image: url("../images/song3.jpg");
 }
 
 .about-body .about-section-private .private-info-wrapper .private-me-infobox #song4 {
-  background-image: url("static/images/song4.jpg");
+  background-image: url("../images/song4.jpg");
 }
 
 #skill-section {
@@ -671,27 +671,27 @@ body {
 }
 
 #projects #berl-eat-tile-background {
-  background-image: url("static/images/berl-eat-background.png");
+  background-image: url("../images/berl-eat-background.png");
 }
 
 #projects #tabata-warriors-tile-background {
-  background-image: url("static/images/tabata-warriors-example-stock.png");
+  background-image: url("../images/tabata-warriors-example-stock.png");
 }
 
 #projects #personal-blog-tile-background {
-  background-image: url("static/images/personal-blog-stock.png");
+  background-image: url("../images/personal-blog-stock.png");
 }
 
 #projects #github-tile-background {
-  background-image: url("static/images/github-stock.png");
+  background-image: url("../images/github-stock.png");
 }
 
 #projects #mealtimes-tile-background {
-  background-image: url("static/images/mealtimes-stock.png");
+  background-image: url("../images/mealtimes-stock.png");
 }
 
 #projects #tech-docu-tile-background {
-  background-image: url("static/images/technical-documentation-stock.png");
+  background-image: url("../images/technical-documentation-stock.png");
 }
 
 #projects .project-time {
