@@ -943,10 +943,10 @@ footer {
         -ms-flex-align: stretch;
             align-items: stretch;
     width: 100%;
-    padding: 2%;
+    padding: 1%;
   }
   #navbar .nav-container {
-    margin: 2%;
+    margin: 1%;
   }
   .about-body .about-me-content {
     -webkit-box-flex: 14;
