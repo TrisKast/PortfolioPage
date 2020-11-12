@@ -44,13 +44,16 @@ $base-color-platoinum: #EBEBEB;
 $base-color-celadon: #247BA0;
 
 $base-yellow: #EEDB54;
-$base-green: #87BF8B;
+$base-sun-set-orange: #87BF8B;
 $base-red: #DE6C57;
 $base-pink: #B74464;
 $base-dark-blue: #21213C;
 $base-sand: #B98A69;
 $base-teal: #1FA6A5;
 $base-white: #F8F5F6;
+
+$base-sun-set-orange: hsl(30, 91%, 67%);
+$base-cap-green: #2E4145;
 
     
 
@@ -211,12 +214,12 @@ body{
         }
     
         .selected-station{
-            background-color: $base-green;
+            background-color: $base-sun-set-orange;
             border-color: $base-dark-blue;
         }
         
         .station-hovered{
-            background-color: $base-green;
+            background-color: $base-sun-set-orange;
             border-color: $base-dark-blue;
         }
         
@@ -260,6 +263,12 @@ body{
     #download-cv{
         position: absolute;
         right: 10%;
+        border-color: $base-cap-green;
+        color: $base-cap-green;
+        &:hover{
+            background-color: $base-cap-green;
+            color: $base-white;
+        }
     }
 
 
@@ -835,6 +844,14 @@ footer{
 
         #download-cv{
             position: static;
+            // border-color: blue;
+            // color: blue;
+
+            // &:hover{
+            //     border-color: white;
+            //     color:white;
+            //     background-color: blue;
+            // }
         }
 
         #about-resume{

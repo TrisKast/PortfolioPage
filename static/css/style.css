@@ -240,12 +240,12 @@ body {
 }
 
 .about-body #about-resume .selected-station {
-  background-color: #87BF8B;
+  background-color: #f7ab5e;
   border-color: #21213C;
 }
 
 .about-body #about-resume .station-hovered {
-  background-color: #87BF8B;
+  background-color: #f7ab5e;
   border-color: #21213C;
 }
 
@@ -300,6 +300,13 @@ body {
 .about-body #download-cv {
   position: absolute;
   right: 10%;
+  border-color: #2E4145;
+  color: #2E4145;
+}
+
+.about-body #download-cv:hover {
+  background-color: #2E4145;
+  color: #F8F5F6;
 }
 
 .about-body h1 {
