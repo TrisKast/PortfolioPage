@@ -13,4 +13,4 @@ The same goes for css, though I used bulma for some buttons. Also I tried myself
 ### It is still under heavy construction and I try to work on it as much as I can squeeze im. ###
 
 
-You can find the current version under: **htps://tristankast.com**
+You can find the current version under: **https://tristankast.com**
