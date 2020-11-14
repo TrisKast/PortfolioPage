@@ -1,4 +1,4 @@
-.about-body #about-me-text, .about-body .about-section-private .private-info-wrapper .private-me-infobox, .about-body .about-section-private .private-info-wrapper .private-me-infobox .info-box-content-tile, #projects .project-tile, #projects .project-time, #projects .project-title, #projects .project-link-div, #contact-section, #contact-section #contact-link-wrapper a {
+.about-body .about-section-private .private-info-wrapper .private-me-infobox, .about-body .about-section-private .private-info-wrapper .private-me-infobox .info-box-content-tile, #projects .project-tile, #projects .project-time, #projects .project-title, #projects .project-link-div, #contact-section, #contact-section #contact-link-wrapper a {
   border: 1px solid;
   border-radius: 15px;
 }
@@ -176,6 +176,22 @@ body {
           flex: 1;
 }
 
+.classic-section .slide-button-container #slide-button-left {
+  height: 25%;
+  background-image: url("/static/images/Arrow-Left-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.classic-section .slide-button-container #slide-button-right {
+  height: 25%;
+  background-image: url("/static/images/Arrow-Right-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .about-body {
   display: block;
   -webkit-box-orient: vertical;
@@ -236,7 +252,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 5px solid #2F323A;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.about-body #about-resume #time-line #station-MPUSP-wrapper {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.about-body #about-resume #time-line #station-DZNE-wrapper {
+  border-radius: 27% 73% 70% 30% / 64% 69% 31% 36%;
+}
+
+.about-body #about-resume #time-line #station-working-student-wrapper {
+  border-radius: 73% 27% 29% 71% / 72% 69% 31% 28%;
+}
+
+.about-body #about-resume #time-line #station-MSc-wrapper {
+  border-radius: 73% 27% 29% 71% / 21% 28% 72% 79%;
+}
+
+.about-body #about-resume #time-line #station-BSc-wrapper {
+  border-radius: 75% 25% 65% 35% / 52% 33% 67% 48%;
 }
 
 .about-body #about-resume .selected-station {

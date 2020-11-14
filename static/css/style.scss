@@ -172,6 +172,7 @@ body{
     }
 
     .slide-button-container{
+        //height: 100%;
         display: flex;
         align-items: center;
         //justify-content: center;
@@ -180,10 +181,28 @@ body{
     
         a{
             flex: 1; 
+
+        }
+
+        #slide-button-left{
+            height: 25%;
+            background-image: url("/static/images/Arrow-Left-icon.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #slide-button-right{
+            height: 25%;
+            background-image: url("/static/images/Arrow-Right-icon.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
 
 }
+
 
 .about-body{
     display: block;
@@ -209,7 +228,31 @@ body{
                 flex:2;
                 display: flex;
                 align-items: center;
-                border-left: 5px solid $base-color-onyx;  
+                text-align: center;
+                //border-left: 5px solid $base-color-onyx;  
+                //border-radius: 25%;
+                transition: all 0.2s ease-out;
+
+
+            }
+            #station-MPUSP-wrapper{
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            #station-DZNE-wrapper{
+                border-radius: 27% 73% 70% 30% / 64% 69% 31% 36%;
+            }
+
+            #station-working-student-wrapper{
+                border-radius: 73% 27% 29% 71% / 72% 69% 31% 28%;
+            }
+
+            #station-MSc-wrapper{
+                border-radius: 73% 27% 29% 71% / 21% 28% 72% 79%;
+            }
+
+            #station-BSc-wrapper{
+                border-radius: 75% 25% 65% 35% / 52% 33% 67% 48%;
             }
         }
     
@@ -287,7 +330,7 @@ body{
     }
 
     #about-me-text{
-        @extend %rounded-box;
+        //@extend %rounded-box;
         font-size: large;
         padding: 4%;
 
