@@ -376,8 +376,7 @@ body{
         border-color: $base-cap-green;
         color: $base-cap-green;
         &:hover{
-            background-color: $base-cap-green;
-            color: $base-white;
+            background: linear-gradient(29deg, rgba(255,184,140,1) 0%, rgba(222,98,98,1) 100%);
         }
     }
 

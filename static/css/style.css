@@ -404,8 +404,7 @@ body {
 }
 
 .about-body #download-cv:hover {
-  background-color: #2E4145;
-  color: #F8F5F6;
+  background: linear-gradient(29deg, #ffb88c 0%, #de6262 100%);
 }
 
 .about-body h1 {
