@@ -243,7 +243,8 @@ function activte_resume_station(e){
 
         stationName.innerHTML = 'Working Student'
         stationDuration.innerHTML = 'Eberhard-Karls University, Applied Bioinformatics Group, Tübingen, <br> 04/2017 - 03/2018'
-        stationDescription.innerHTML = ` <ul>
+        stationDescription.innerHTML = ` <p>During my Master Degree I worked as a working student in one of our research groups, the 'Applied bioinformativs Group'.</p>
+        <ul>
             <li>
                 MD-Simulations with GROMCAS and PyMOL
             </li>
@@ -253,6 +254,30 @@ function activte_resume_station(e){
         </ul>`
         stationTechHeading.innerHTML = 'Stack:'
         stationTechnologies.innerHTML = 'GROMACS | PyMOL | Python | AQL (SQL) | Java'
+
+
+    } else if(e.target.id == 'station-salesman-wrapper' || e.target.id == 'station-salesman'){
+        document.querySelector('#station-salesman-wrapper').classList.add('selected-station')
+
+        stationName.innerHTML = 'Salesman'
+        stationDuration.innerHTML = 'Nike Outlet Store, Metzingen <br> 08/2015 - 09/2016'
+        stationDescription.innerHTML = ` <p>During my days as an undergrate I worked as a Vendor at the Nike Outlet Store in Metzingen.</p>
+        <ul>
+            <li>
+                Selling shoes and apparal, sportswear as casualwear 
+            </li>
+            <li>
+                Identifying, together with the customer, the right running shoe that fits perfectly their needs and goals
+            </li>
+            <li>
+                Staying up to date with new technologies from NIKE and running shoes in general
+            </li>
+            <li>
+                Training the new employees in the range of products and technologies used in these products, such as shoe cushioning or surface materials
+            </li>
+        </ul>`
+        stationTechHeading.innerHTML = 'Stack:'
+        stationTechnologies.innerHTML = 'Consultancy'
 
     } else if(e.target.id == 'station-DZNE-wrapper' || e.target.id == 'station-DZNE'){
         document.querySelector('#station-DZNE-wrapper').classList.add('selected-station')

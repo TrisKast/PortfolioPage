@@ -11,15 +11,17 @@
 
     <title>Tristan Kast Portfolio</title>
     
-
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+
+
+
 </head>
 
 <body>
@@ -64,7 +66,7 @@
                 </a>
             </div>
             <div class="about-body" id="welcome-text"> 
-                <h1>ABOUT ME</h1>
+                <h1 class="section-heading" >ABOUT ME</h1>
                 <div class="about-me-content" id="about-me-text">
                     
                     <div>
@@ -103,23 +105,26 @@
                 <h1 class="spacer"></h1>
             </div>
             <div class="about-body" id="resume"> 
-                <h1>RESUME <a id="download-cv" class="button is-outlined" href="static/docs/CV_public.pdf" download="TristanKast_CV">Get it as a pdf</a></h1> 
+                <h1 class="section-heading">RESUME <a id="download-cv" class="button is-outlined" href="static/docs/CV_public.pdf" download="TristanKast_CV">Get it as a pdf</a></h1> 
                 <div class="about-me-content" id="about-resume">
                     <div id="time-line">
                         <div class="time-line-station selected-station" id="station-MPUSP-wrapper">
-                            <p class="station-name" id="station-MPUSP">Software Engineer<p>
+                            <p class="station-name" id="station-MPUSP">Software <br> Engineer<p>
                         </div>
                         <div class="time-line-station" id="station-DZNE-wrapper">
-                            <p class="station-name" id="station-DZNE">Computational Scientist</p>
-                        </div>
-                        <div class="time-line-station" id="station-working-student-wrapper">
-                            <p class="station-name" id="station-working-student">Working Student</p>
+                            <p class="station-name" id="station-DZNE">Computational <br> Scientist</p>
                         </div>
                         <div class="time-line-station" id="station-MSc-wrapper">
-                            <p class="station-name" id="station-MSc">M.Sc., Bioinformatics</p>
+                            <p class="station-name" id="station-MSc">M.Sc., <br> Bioinformatics</p>
+                        </div>
+                        <div class="time-line-station" id="station-working-student-wrapper">
+                            <p class="station-name" id="station-working-student">Working <br> Student</p>
                         </div>
                         <div class="time-line-station" id="station-BSc-wrapper">
-                            <p class="station-name" class="time-line-title" id="station-BSc">B.Sc., Bioinformatics</p>
+                            <p class="station-name" class="time-line-title" id="station-BSc">B.Sc., <br> Bioinformatics</p>
+                        </div>
+                        <div class="time-line-station" id="station-salesman-wrapper">
+                            <p class="station-name" class="time-line-title" id="station-salesman">Salesman</p>
                         </div>
                     </div>
                     <div id="time-line-spacer">
@@ -145,7 +150,7 @@
                 <h1 class="spacer"></h1>
             </div>
             <div class="about-body" id="personal"> 
-                <h1>GET TO KNOW ME</h1>
+                <h1 class="section-heading">GET TO KNOW ME</h1>
                 <div class="about-me-content" id="about-personal">
                     <div class="about-section-private" id="about-me-private">
                         <div class="private-info-wrapper">
@@ -230,7 +235,7 @@
         </section>
 
         <section class="classic-section" id="skill-section">
-            <h1>SKILLS</h1>
+            <h1 class="section-heading">SKILLS</h1>
             <div id="chart-button-wrapper">
                 <button class="button is-dark is-outlined chart-button" id="chart-button-1" >WebDevelopment</button>
                 <button class="button is-dark is-outlined chart-button" id="chart-button-2">Data Analysis</button>
@@ -244,11 +249,13 @@
             </div>
         </section>
 
-        <!-- <section class="classic-section" id="projects">
+       <section class="classic-section" id="projects">
 
-            <h1>MY PROJECTS</h1>
+            <h1 class="section-heading">MY PROJECTS</h1>
 
-            <div class="project-row">
+            This part is still under construction
+
+             <!-- <div class="project-row">
                 <div class="project-tile">
                     <div class="tile-background" id="mealtimes-tile-background">
                     </div>
@@ -407,9 +414,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-        </section> -->
+        </section>
 
 
         <section id="contact-section">

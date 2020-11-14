@@ -34,6 +34,15 @@
   color: inherit;
 }
 
+.section-heading {
+  margin: 0;
+  padding: 0;
+  color: white;
+  border-radius: 73% 27% 29% 71% / 73% 46% 54% 27%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -108,7 +117,7 @@ body {
   width: 30%;
   text-align: right;
   right: 5%;
-  line-height: 64px;
+  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,13 +132,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F8F5F6;
   border-radius: 73% 27% 29% 71% / 73% 46% 54% 27%;
-  background-color: white;
 }
 
 #welcome-section #welcome-para-wrapper h1 {
   padding: 3%;
-  color: black;
   font-weight: 700;
   font-size: 24px;
 }
@@ -274,6 +282,7 @@ body {
   transition: all 0.2s ease-out;
   padding: 2%;
   margin: 1%;
+  font-weight: 500;
 }
 
 .about-body #about-resume #time-line .time-line-station .station-name {
@@ -318,17 +327,25 @@ body {
   border-bottom: 3px solid #2F323A;
 }
 
+.about-body #about-resume #time-line #station-salesman-wrapper {
+  border-radius: 47% 53% 36% 64% / 76% 82% 18% 24%;
+  border-left: 3px solid #2F323A;
+  border-right: 3px solid #2F323A;
+  border-top: 1px solid #2F323A;
+  border-bottom: 3px solid #2F323A;
+}
+
 .about-body #about-resume .selected-station {
-  background-color: #f7ab5e;
   border-color: #21213C;
   border-left: 2px solid #2F323A;
   border-right: 3px solid #2F323A;
   border-top: 5px solid #2F323A;
+  background: radial-gradient(circle, #ffb88c 0%, #de6262 100%);
 }
 
 .about-body #about-resume .station-hovered {
-  background-color: #f7ab5e;
-  border-color: #21213C;
+  background: radial-gradient(circle, #ffb88c 0%, #de6262 100%);
+  color: #F8F5F6;
 }
 
 .about-body #about-resume #time-line-spacer {
