@@ -135,12 +135,25 @@ body{
         // flex:1;
         // text-align: center;
         line-height: 64px;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 73% 27% 29% 71% / 73% 46% 54% 27%;
+        background-color: white;
     
         h1{
-            color:$base-white;
+            //flex:1;
+            //color:$base-white;
+            padding: 3%;
+            color:black;
             font-weight: 700;
             font-size: 24px;
         }
+
+
     }
 
     #head-cutout{
@@ -232,33 +245,61 @@ body{
                 //border-left: 5px solid $base-color-onyx;  
                 //border-radius: 25%;
                 transition: all 0.2s ease-out;
+                padding: 2%;
+                margin: 1%;
+
+
+                .station-name{
+                    margin:auto;
+                }
 
 
             }
             #station-MPUSP-wrapper{
                 border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                border-left: 2px solid $base-color-onyx; 
+                border-right: 3px solid $base-color-onyx;
+                border-top: 5px solid $base-color-onyx;  
             }
 
             #station-DZNE-wrapper{
                 border-radius: 27% 73% 70% 30% / 64% 69% 31% 36%;
+                border-left: 3px solid $base-color-onyx; 
+                border-right: 1px solid $base-color-onyx;
+                border-top: 2px solid $base-color-onyx;  
+                border-bottom: 3px solid $base-color-onyx;  
             }
 
             #station-working-student-wrapper{
-                border-radius: 73% 27% 29% 71% / 72% 69% 31% 28%;
+                border-radius: 21% 79% 51% 49% / 67% 46% 54% 33%;
+                border-left: 1px solid $base-color-onyx; 
+                border-right: 4px solid $base-color-onyx;
+                border-top: 3px solid $base-color-onyx;  
+                border-bottom: 32x solid $base-color-onyx;  
             }
 
             #station-MSc-wrapper{
-                border-radius: 73% 27% 29% 71% / 21% 28% 72% 79%;
+                border-radius: 32% 68% 46% 54% / 67% 65% 35% 33%;
+                border-left: 2px solid $base-color-onyx; 
+                border-bottom: 3px solid $base-color-onyx;
+                border-top: 5px solid $base-color-onyx;  
             }
 
             #station-BSc-wrapper{
                 border-radius: 75% 25% 65% 35% / 52% 33% 67% 48%;
+                border-left: 3px solid $base-color-onyx; 
+                border-right: 3px solid $base-color-onyx;
+                border-top: 1px solid $base-color-onyx;  
+                border-bottom: 3px solid $base-color-onyx;  
             }
         }
     
         .selected-station{
             background-color: $base-sun-set-orange;
             border-color: $base-dark-blue;
+            border-left: 2px solid $base-color-onyx; 
+            border-right: 3px solid $base-color-onyx;
+            border-top: 5px solid $base-color-onyx;  
         }
         
         .station-hovered{
@@ -909,14 +950,22 @@ footer{
                 flex-direction: column;
                 margin: 2%;
                 padding: 2%;
+                margin-top: 0%;
+                padding-top: 0%;
             
                 .time-line-station{
                     flex:2;
                     display: flex;
                     align-items: center;
-                    border-left: 5px solid $base-color-onyx; 
-                    border-right: 5px solid $base-color-onyx;  
+                    text-align: center;
                     padding: 3%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+
+                    border-left: 2px solid $base-color-onyx; 
+                    border-right: 3px solid $base-color-onyx;
+                    border-top: 2px solid $base-color-onyx; 
+                    border-bottom: 1px solid $base-color-onyx;  
                 }
             }
         }
@@ -946,12 +995,18 @@ footer{
             text-align: center;
             line-height: 64px;
             padding: 4%;
+            border-radius: 0%;
+            background-color: transparent;
+
+
         
             h1{
                 color:$base-white;
                 font-weight: 700;
                 font-size: 24px;
             }
+
+
         }
 
         
