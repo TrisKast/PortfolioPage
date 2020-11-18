@@ -278,8 +278,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.9s ease-out;
+  transition: all 0.9s ease-out;
   padding: 2%;
   margin: 1%;
   font-weight: 500;
