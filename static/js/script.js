@@ -7,13 +7,11 @@ import {
   skillDescriptionDict
 } from './zingcharts.js'
 
-
 const navbar = document.querySelector('#navbar')
 const slideButtonLeft = document.querySelector('#slide-button-left');
 const slideButtonRight = document.querySelector('#slide-button-right');
 const welcomeText = document.querySelector('#welcome-text')
 const resume = document.querySelector('#resume')
-const skills = document.querySelector('#skills')
 const personal = document.querySelector('#personal')
 const chartButtons = Array.from(document.querySelectorAll('.chart-button'));
 const resume_stations = Array.from(document.querySelectorAll('.time-line-station'))
@@ -25,17 +23,17 @@ const skillExplanation = document.querySelector('#skill-explanation')
 const skillName = document.querySelector('#skillName')
 const skillDescription = document.querySelector('#skillDescription')
 const stationTechHeading = document.querySelector('#station-tech-heading')
+const x = window.matchMedia("(max-width: 768px)")
 
-
-resume.style.display='none' 
-personal.style.display='none' 
-//skillExplanation.style.display='none'
 let currPersonalPos = ''
 let displaySkillExplanation = false
+
 skillName.style.display='none'
 skillDescription.style.display='none'
+resume.style.display='none' 
+personal.style.display='none' 
 
-var x = window.matchMedia("(max-width: 768px)")
+
 if (x.matches) {
     slideButtonLeft.style.display='none'
     slideButtonRight.style.display='none'
@@ -114,12 +112,9 @@ function changeChart(e){
       });
 }
 
-
 function slide_right(){
 
-  if (x.matches) {
-    console.log('screen to narrow')
-  } else {
+  if (! x.matches) {
     if(currPersonalPos == 'text'){
         welcomeText.style.display='none' 
         resume.style.display='flex' 
@@ -137,9 +132,7 @@ function slide_right(){
 }
 
 function slide_left(){
-    if (x.matches) {
-        console.log('screen to narrow')
-    } else {
+    if (! x.matches) {
         if(currPersonalPos == 'text'){
             welcomeText.style.display='none' 
             personal.style.display='block' 
@@ -152,7 +145,6 @@ function slide_left(){
             resume.style.display='none' 
             welcomeText.style.display='flex' 
             currPersonalPos = 'text'
-
         }
     }
 }
@@ -184,7 +176,6 @@ function activte_resume_station(e){
 
     resume_stations.forEach(station => station.classList.remove('selected-station'))
 
-    
     if(e.target.id == 'station-BSc-wrapper' || e.target.id == 'station-BSc'){
         document.querySelector('#station-BSc-wrapper').classList.add('selected-station')
 
@@ -320,7 +311,6 @@ function activte_resume_station(e){
         stationTechHeading.innerHTML = 'Stack:'
         stationTechnologies.innerHTML = 'Python | Jupyter Notebook | Javascript | HTML | CSS | Vue.js | Flask | Scientific Linux | MongoDb | NGINX | Gunicorn | Supervisor'
     }
-    
 }
    
 zingchart.render({
