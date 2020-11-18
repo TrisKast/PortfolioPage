@@ -612,6 +612,8 @@ body{
     justify-content: center;
     align-items: stretch;
 
+
+
     .project-row{
         flex:1;
         display: flex;
@@ -630,6 +632,13 @@ body{
         @extend %rounded-box;
     
         margin: 1%;
+
+        &:hover{
+            .tile-background{
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+            }
+        }
     
     }
 
@@ -643,6 +652,11 @@ body{
         background-repeat: no-repeat;
         background-size: cover; 
         border-radius: 15px;
+
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+
+
     }
     
     #berl-eat-tile-background{

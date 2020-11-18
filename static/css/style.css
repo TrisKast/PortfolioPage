@@ -755,6 +755,11 @@ body {
   margin: 1%;
 }
 
+#projects .project-tile:hover .tile-background {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
 #projects .tile-background {
   -o-object-fit: cover;
      object-fit: cover;
@@ -766,6 +771,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 #projects #berl-eat-tile-background {
