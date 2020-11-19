@@ -788,7 +788,7 @@ body {
 }
 
 #projects #github-tile-background {
-  background-image: url("../images/github-stock.png");
+  background-image: url("../images/code-overview-bg.png");
 }
 
 #projects #mealtimes-tile-background {
@@ -801,6 +801,10 @@ body {
 
 #projects #personal-page-tile-background {
   background-image: url("../images/portfolio-background.png");
+}
+
+#projects #evernotebooks-tile-background {
+  background-image: url("../images/evernotebooks-bg.png");
 }
 
 #projects .project-time {
